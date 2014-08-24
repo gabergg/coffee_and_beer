@@ -1,0 +1,169 @@
+@import "bootstrap";
+
+/* mixins, variables, etc. */
+
+$grayMediumLight: #eaeaea;
+
+@mixin box_sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* universal */
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  padding-top: 60px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  #text-align: center;
+  font-weight: normal;
+  color: $grayLight;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+
+/* header */
+
+#logo {
+  float: left;
+  margin: 0px 10px 10px 10px;
+  font-size: 1.5em;
+  letter-spacing: -1px;
+  font-weight: bold;
+  width: 1.75em;
+  height: auto;
+  line-height: 1;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+#logo_text{
+  float: left;
+  margin: 0px 10px 10px 10px;
+  font-size: 1.3em;
+  padding-top:7px;
+  color: #0099FF;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+  width: 10em;
+  height: auto;
+  line-height: 1;
+  &:hover {
+    color: blue;
+    text-decoration: none;
+  }
+}
+
+/* nav bad */
+.topmargin {
+  margin-top:1.5em;
+}
+ul.nav a:link, a:visited {
+  display: block;
+  width: 120px;
+  font-weight: bold;
+  text-align: center;
+  padding: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  &:hover {
+    background-color: #D1E0E0;
+    text-decoration: none;
+  }
+}
+.hero-unit{
+  margin-top: 5em;
+}
+
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid $grayMediumLight;
+  color: $grayLight;
+  a {
+    color: $gray;
+    &:hover {
+      color: $grayDarker;
+    }
+  }
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 10px;
+    }
+  }
+}
+
+/* homepage */
+#home_banner {
+  max-width:100%;
+}
+#navcontainer {
+  width:940px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.container{
+  margin-top:5em;
+}
+
+.words{
+  display: inline-block;
+  position: absolute;
+  color:#333333;
+  text-align:left;
+  margin-left:65em;
+  margin-top:15em;
+
+}

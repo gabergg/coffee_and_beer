@@ -1,2 +1,6 @@
-<h1>StaticPages#blog</h1>
-<p>Find me in app/views/static_pages/blog.html.erb</p>
+<% provide(:title, 'Blog') %>
+<div id="bloggy"></div>
+
+<script>
+    $('<iframe />').attr({src:'http://coffeenbeer.tumblr.com',height:"1500px",width:"1000px",frameborder:"0"}).appendTo('#bloggy');
+</script>

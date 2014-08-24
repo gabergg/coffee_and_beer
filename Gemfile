@@ -43,3 +43,9 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+# Bloggy to insert Jekyll blog into rails app
+gem 'bloggy'
+
+#Twitter bootstrap for sass
+gem 'bootstrap-sass'
