@@ -3,8 +3,8 @@ development:
   encoding: unicode
   database: coffeenbeer_development
   pool: 5
-  username: ENV["PG_USER_DEV"]
-  password: ENV["PG_PASS_DEV"]
+  username: <%= ENV['PG_USER_DEV'] %>
+  password: <%= ENV['PG_PASS_DEV'] %>
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -14,14 +14,14 @@ test:
   encoding: unicode
   database: coffeenbeer_test
   pool: 5
-  username: ENV["PG_USER_TEST"]
-  password: ENV["PG_PASS_TEST"]
+  username: <%= ENV['PG_USER_TEST'] %>
+  password: <%= ENV['PG_PASS_TEST'] %>
 
 production:
   adapter: postgresql
   encoding: unicode
   database: coffeenbeer_production
   pool: 5
-  username: ENV["PG_USER_PROD"]
-  password: ENV["PG_PASS_PROD"]
+  username: <%= ENV['PG_USER_PROD'] %>
+  password: <%= ENV['PG_PASS_PROD'] %>
 
