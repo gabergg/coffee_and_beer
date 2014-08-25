@@ -1,4 +1,4 @@
-var marker;
+var allMarkers = [];
 var infowindow;
 
 function initialize_map() {
@@ -60,6 +60,9 @@ function initialize_map() {
                 anchor: new google.maps.Point(17, 34),
                 scaledSize: new google.maps.Size(25, 25)
             };
+
+            if(allMarkers.length >= 1) allMarkers.pop().setMap(null);
+
             var marker = new google.maps.Marker({
                 map: map,
                 title: place.name,
@@ -67,7 +70,7 @@ function initialize_map() {
                 position: place.geometry.location
             });
 
-            markers.push(marker);
+            allMarkers.push(marker);
             infowindow.open(map, marker);
 
 
@@ -78,10 +81,14 @@ function initialize_map() {
         map.setZoom(14);
     });
     google.maps.event.addListener(map, "click", function(event) {
-        marker = new google.maps.Marker({
+
+        if(allMarkers.length >= 1) allMarkers.pop().setMap(null);
+        var marker = new google.maps.Marker({
           position: event.latLng,
-          map: map
+          map: map,
+          draggable: true
         });
+        allMarkers.push(marker);
         infowindow.open(map, marker);
     });
 
