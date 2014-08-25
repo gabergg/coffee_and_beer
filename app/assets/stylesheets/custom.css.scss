@@ -13,7 +13,7 @@ $grayMediumLight: #eaeaea;
 /* universal */
 
 html {
-  overflow-y: scroll;
+  //overflow-y: scroll;
 }
 
 body {
@@ -121,9 +121,11 @@ ul.nav a:link, a:visited {
 
 /* footer */
 
-footer {
+#footer {
   margin-top: 45px;
   padding-top: 5px;
+  padding-right: 30px;
+  padding-bottom: 10px;
   border-top: 1px solid $grayMediumLight;
   color: $grayLight;
   a {
