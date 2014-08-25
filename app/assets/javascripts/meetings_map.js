@@ -7,7 +7,10 @@ function initialize_map() {
     var options = {
         zoom: 4,
         center: latlng,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        zoomControlOptions: {
+            style: google.maps.ZoomControlStyle.DEFAULT,
+        }
     }
 
     var map = new google.maps.Map(document.getElementById("map-canvas"), options);
