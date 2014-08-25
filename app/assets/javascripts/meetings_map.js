@@ -77,6 +77,14 @@ function initialize_map() {
         map.fitBounds(bounds);
         map.setZoom(14);
     });
+    google.maps.event.addListener(map, "click", function(event) {
+        marker = new google.maps.Marker({
+          position: event.latLng,
+          map: map
+        });
+        infowindow.open(map, marker);
+    });
+
     google.maps.event.addListener(map, 'bounds_changed', function () {
         var bounds = map.getBounds();
         searchBox.setBounds(bounds);
