@@ -126,8 +126,6 @@ ul.nav a:link, a:visited {
   padding-top: 5px;
   padding-right: 30px;
   padding-bottom: 10px;
-  border-top: 1px solid $grayMediumLight;
-  color: $grayLight;
   a {
     color: $gray;
     &:hover {
@@ -168,4 +166,10 @@ ul.nav a:link, a:visited {
   margin-left:65em;
   margin-top:15em;
 
+}
+
+/* map div */
+#map-canvas {
+  width: 100%;
+  height: 600px;
 }
