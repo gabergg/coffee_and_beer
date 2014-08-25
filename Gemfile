@@ -45,9 +45,16 @@ end
 # Bloggy to insert Jekyll blog into rails app
 gem 'bloggy'
 
+#Gem for passing variables to js from controller
+gem 'gon'
+
 #Twitter bootstrap for sass
 gem 'bootstrap-sass'
 
+#Postgresql for database
+gem 'pg'
+
+=begin
 group :development, :test do
   gem 'sqlite3', '1.3.8'
 end
@@ -55,4 +62,9 @@ end
 group :production do
   gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
+end
+=end
+
+group :production do
+  gem 'rails_12factor'
 end
