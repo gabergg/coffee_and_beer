@@ -5,21 +5,24 @@
       <driver-ref>sqlite.xerial</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:coffeenbeer_development</jdbc-url>
-      <user-name>coffeenbeer</user-name>
+      <user-name>ENV[&quot;PG_USER_DEV&quot;]</user-name>
+      <user-password>dfefdfe4dffcdff1df88dffadfeddff5dffadfebdff9dff9dff5dfeedfefdffcdf88dff7</user-password>
       <libraries />
     </data-source>
     <data-source source="LOCAL" name="Rails coffee_and_beer: test" uuid="725a7459-23ba-4252-a756-f9a90a0ab095">
       <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:coffeenbeer_test</jdbc-url>
-      <user-name>coffeenbeer</user-name>
+      <user-name>ENV[&quot;PG_USER_TEST&quot;]</user-name>
+      <user-password>dfefdfe4dffcdff1df88dffadfeddff5dffadfebdff9dff9dff5dffedfefdff9dffedf88dff7</user-password>
       <libraries />
     </data-source>
     <data-source source="LOCAL" name="Rails coffee_and_beer: production" uuid="113ab9db-6bbf-4854-a6e6-4cc9ec337ac4">
       <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:coffeenbeer_production</jdbc-url>
-      <user-name>coffeenbeer</user-name>
+      <user-name>ENV[&quot;PG_USER_PROD&quot;]</user-name>
+      <user-password>dfefdfe4dffcdff1df88dffadfeddff5dffadfebdff9dff9dff5dffadff8dfe5dfeedf88dff7</user-password>
       <libraries />
     </data-source>
   </component>
