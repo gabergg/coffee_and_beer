@@ -45,12 +45,8 @@ function initialize_map() {
         if (places.length == 0) {
             return;
         }
-        for (var i = 0, marker; marker = markers[i]; i++) {
-            marker.setMap(null);
-        }
 
         // For each place, get the icon, place name, and location.
-        markers = [];
         var bounds = new google.maps.LatLngBounds();
         for (var i = 0, place; place = places[i]; i++) {
             var image = {
@@ -61,7 +57,7 @@ function initialize_map() {
                 scaledSize: new google.maps.Size(25, 25)
             };
 
-            //if (allMarkers.length >= 1) allMarkers.pop().setMap(null);
+            if (allMarkers.length >= 1) allMarkers.pop().setMap(null);
 
             var marker = new google.maps.Marker({
                 map: map,
@@ -82,7 +78,7 @@ function initialize_map() {
     });
     google.maps.event.addListener(map, "click", function (event) {
 
-        //if (allMarkers.length >= 1) allMarkers.pop().setMap(null);
+        if (allMarkers.length >= 1) allMarkers.pop().setMap(null);
         var marker = new google.maps.Marker({
             map: map,
             draggable: true,
@@ -110,16 +106,19 @@ function saveData() {
     var name = $('#name').val();
     var phone = $('#phone').val();
     var meeting_type = $('#meeting_type').val();
-    console.log(allMarkers);
     var lastMarker = allMarkers.pop();
-    console.log(lastMarker.getPosition().lat());
-    var latitude = lastMarker.getPosition.lat();
-    var longitude = lastMarker.getPosition.lng();
-    console.log(latitude);
-    console.log(longitude);
-    var data = {"email": "#{email}"};
+    var latitude = lastMarker.getPosition().lat().toString();
+    var longitude = lastMarker.getPosition().lng().toString();
+    var dataSet = {"email": email, "name": name, "phone": phone, "meeting_type": meeting_type,
+        "latitude": latitude, "longitude": longitude};
+    infowindow.close();
+    console.log(dataSet);
 
-    $.post("/meetings", {"data": data});
+    $.ajax({
+        url: '/meetings',
+        type: 'POST',
+        data: dataSet
+    });
 
 
 }
