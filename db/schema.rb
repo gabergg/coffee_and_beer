@@ -11,9 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20140826015429) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "meetings", force: true do |t|
+    t.string   "email"
+    t.string   "meeting_type"
+    t.string   "name"
+    t.string   "phone"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "meetings", ["email"], name: "index_meetings_on_email", using: :btree
+  add_index "meetings", ["meeting_type"], name: "index_meetings_on_meeting_type", using: :btree
 
 end
