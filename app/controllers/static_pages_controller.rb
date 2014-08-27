@@ -1,5 +1,6 @@
 class StaticPagesController < ApplicationController
   def home
+    gon.markers = Meeting.all.select("latitude, longitude")
   end
 
   def blog

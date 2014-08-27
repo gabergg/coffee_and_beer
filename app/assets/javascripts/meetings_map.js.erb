@@ -88,7 +88,7 @@ function initialize_map() {
         infowindow.open(map, marker);
     });
 
-    google.maps.event.addListener(infowindow,'closeclick',function(){
+    google.maps.event.addListener(infowindow, 'closeclick', function () {
         allMarkers.pop().setMap(null); // remove the corresponding marker
     });
 
@@ -96,6 +96,10 @@ function initialize_map() {
         var bounds = map.getBounds();
         searchBox.setBounds(bounds);
     });
+
+    console.log(gon.markers);
+
+    placeDBMarkers(map);
 }
 
 function loadScript() {
@@ -123,5 +127,18 @@ function saveData() {
         data: dataSet
     });
 
+}
 
+function placeDBMarkers(map) {
+    for (var i = 0; i < gon.markers.length; i++) {
+        if (gon.markers[i].latitude && gon.markers[i].longitude) {
+
+            console.log(gon.markers[i]);
+
+            var archiveMarker = new google.maps.Marker({
+                map: map,
+                position: {lat: gon.markers[i].latitude, lng: gon.markers[i].longitude}
+            });
+        }
+    }
 }
