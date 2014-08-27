@@ -5,7 +5,7 @@ class MeetingsController < ApplicationController
                            meeting_type: params[:meeting_type],
                            latitude: params[:latitude].to_f, longitude: params[:longitude].to_f)
     begin
-      @meeting.save
+      @meeting.save!
     rescue => e
       logger.warn "Failed to save new meeting for email: " + params[:email] + " and phone " + params[:phone]
     end
