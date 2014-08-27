@@ -13,7 +13,7 @@ function initialize_map() {
     }
 
     var map = new google.maps.Map(document.getElementById("map-canvas"), options);
-    var html = "<table>" +
+    var html = "<div id='infowindow-content'><table>" +
             "<tr><td>Name:</td> <td><input type='text' id='name'/> </td> </tr>" +
             "<tr><td>Email:</td> <td><input type='text' id='email'/> </td> </tr>" +
             "<tr><td>Phone: </td><td><input type='text' id='phone'/></td></tr>" +
@@ -22,10 +22,9 @@ function initialize_map() {
             "<option value='beer'>Beer</option>" +
             "<option value='other'>Other</option>" +
             "</select> </td></tr>" +
-            "<tr><td></td><td><input type='button' value='Post' onclick='saveData()'/></td></tr>";
+            "<tr><td></td><td><input type='button' value='Post' onclick='saveData()'/></td></tr></table></div>";
     infowindow = new google.maps.InfoWindow({
-        content: html,
-        margin: 100
+        content: html
     });
 
 
@@ -89,6 +88,10 @@ function initialize_map() {
         infowindow.open(map, marker);
     });
 
+    google.maps.event.addListener(infowindow,'closeclick',function(){
+        allMarkers.pop().setMap(null); // remove the corresponding marker
+    });
+
     google.maps.event.addListener(map, 'bounds_changed', function () {
         var bounds = map.getBounds();
         searchBox.setBounds(bounds);
@@ -113,7 +116,6 @@ function saveData() {
     var dataSet = {"email": email, "name": name, "phone": phone, "meeting_type": meeting_type,
         "latitude": latitude, "longitude": longitude};
     infowindow.close();
-    console.log(dataSet);
 
     $.ajax({
         url: '/meetings',
