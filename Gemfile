@@ -46,7 +46,7 @@ end
 gem 'bloggy'
 
 #Gem for passing variables to js from controller
-gem 'gon'
+gem 'gon', github: 'gazay/gon'
 
 #Twitter bootstrap for sass
 gem 'bootstrap-sass'
