@@ -1,5 +1,7 @@
 class Meeting < ActiveRecord::Base
 
+  validates :latitude, presence: true
+  validates :longitude, presence: true
   validate :email_or_phone
 
   def email_or_phone

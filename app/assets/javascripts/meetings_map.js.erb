@@ -1,5 +1,6 @@
 var allMarkers = [];
 var infowindow;
+var map;
 
 function initialize_map() {
     var latlng = new google.maps.LatLng(39.8282, -98.5795);
@@ -12,7 +13,7 @@ function initialize_map() {
         }
     }
 
-    var map = new google.maps.Map(document.getElementById("map-canvas"), options);
+    map = new google.maps.Map(document.getElementById("map-canvas"), options);
     var html = "<div id='infowindow-content'><table>" +
             "<tr><td>Name:</td> <td><input type='text' id='name'/> </td> </tr>" +
             "<tr><td>Email:</td> <td><input type='text' id='email'/> </td> </tr>" +
@@ -23,10 +24,10 @@ function initialize_map() {
             "<option value='other'>Other</option>" +
             "</select> </td></tr>" +
             "<tr><td></td><td><input type='button' value='Post' onclick='saveData()'/></td></tr></table></div>";
+
     infowindow = new google.maps.InfoWindow({
         content: html
     });
-
 
     // Create the search box and link it to the UI element.
     var input = /** @type {HTMLInputElement} */(
@@ -97,9 +98,8 @@ function initialize_map() {
         searchBox.setBounds(bounds);
     });
 
-    console.log(gon.markers);
+    placeDBMarkers(map, gon.markers)
 
-    placeDBMarkers(map);
 }
 
 function loadScript() {
@@ -114,6 +114,7 @@ function saveData() {
     var name = $('#name').val();
     var phone = $('#phone').val();
     var meeting_type = $('#meeting_type').val();
+    gon.allMarkers = allMarkers;
     var lastMarker = allMarkers.pop();
     var latitude = lastMarker.getPosition().lat().toString();
     var longitude = lastMarker.getPosition().lng().toString();
@@ -125,19 +126,19 @@ function saveData() {
         url: '/meetings',
         type: 'POST',
         data: dataSet
+    }).done(function () {
+        console.log(gon)
     });
 
 }
 
-function placeDBMarkers(map) {
-    for (var i = 0; i < gon.markers.length; i++) {
-        if (gon.markers[i].latitude && gon.markers[i].longitude) {
-
-            console.log(gon.markers[i]);
+function placeDBMarkers(map, markerSet) {
+    for (var i = 0; i < markerSet.length; i++) {
+        if (markerSet[i].latitude && markerSet[i].longitude) {
 
             var archiveMarker = new google.maps.Marker({
                 map: map,
-                position: {lat: gon.markers[i].latitude, lng: gon.markers[i].longitude}
+                position: {lat: markerSet[i].latitude, lng: markerSet[i].longitude}
             });
         }
     }

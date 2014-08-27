@@ -7,7 +7,7 @@ class MeetingsController < ApplicationController
     begin
       @meeting.save!
     rescue => e
-      logger.warn "Failed to save new meeting for email: " + params[:email] + " and phone " + params[:phone]
+      logger.warn "Failed to save new meeting for email: " + e.to_s
     end
 
     redirect_to root_path
