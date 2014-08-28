@@ -62,7 +62,6 @@ p {
   line-height: 1.7em;
 }
 
-
 /* header */
 
 #logo {
@@ -80,11 +79,11 @@ p {
   }
 }
 
-#logo_text{
+#logo_text {
   float: left;
   margin: 0px 10px 10px 10px;
   font-size: 1.3em;
-  padding-top:7px;
+  padding-top: 7px;
   color: #0099FF;
   text-transform: uppercase;
   letter-spacing: -1px;
@@ -100,8 +99,9 @@ p {
 
 /* nav bad */
 .topmargin {
-  margin-top:1.5em;
+  margin-top: 1.5em;
 }
+
 ul.nav a:link, a:visited {
   display: block;
   width: 120px;
@@ -115,7 +115,8 @@ ul.nav a:link, a:visited {
     text-decoration: none;
   }
 }
-.hero-unit{
+
+.hero-unit {
   margin-top: 5em;
 }
 
@@ -147,24 +148,26 @@ ul.nav a:link, a:visited {
 
 /* homepage */
 #home_banner {
-  max-width:100%;
+  max-width: 100%;
 }
+
 #navcontainer {
-  width:940px;
+  width: 940px;
   margin-right: auto;
   margin-left: auto;
 }
-.container{
-  margin-top:5em;
+
+.container {
+  margin-top: 5em;
 }
 
-.words{
+.words {
   display: inline-block;
   position: absolute;
-  color:#333333;
-  text-align:left;
-  margin-left:65em;
-  margin-top:15em;
+  color: #333333;
+  text-align: left;
+  margin-left: 65em;
+  margin-top: 15em;
 
 }
 
@@ -179,9 +182,13 @@ ul.nav a:link, a:visited {
 }
 
 #infowindow-content {
-  margin-top:20px;
+  margin-top: 20px;
 }
 
 label {
   display: inline-block;
+}
+
+.invalid-input {
+  border: 1px solid red !important;
 }
