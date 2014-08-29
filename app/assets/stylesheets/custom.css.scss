@@ -123,7 +123,7 @@ ul.nav a:link, a:visited {
 /* footer */
 
 #footer {
-  margin-top: 200px;
+  margin-top: 45px;
   padding-top: 5px;
   padding-right: 30px;
   padding-bottom: 10px;
@@ -177,18 +177,27 @@ ul.nav a:link, a:visited {
   height: 600px;
 }
 
+//to fix squished zoom bar, google map image distortion
 #map-canvas img {
   max-width: none;
 }
 
+//push name down from top of info window so it doesnt get covered by address input
 #infowindow-content {
   margin-top: 20px;
 }
 
+//input labels lined up with input in map form
 label {
   display: inline-block;
 }
 
+//bad input on forms for map, red outline of inputs
 .invalid-input {
   border: 1px solid red !important;
+}
+
+/* padding bottom of map, more spacious */
+#home_content {
+  margin-bottom: 200px;
 }
