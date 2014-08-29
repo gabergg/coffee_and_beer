@@ -106,9 +106,9 @@ function initialize_map() {
 
 function loadScript() {
 
-    var script = document.createElement('script')
-    var src = "http://maps.google.com/maps/api/js?libraries=places&sensor=false&callback=initialize_map&key=" + gon.gmaps_api_key
-    script.type = 'text/javascript'
+    var script = document.createElement('script');
+    var src = "http://maps.google.com/maps/api/js?libraries=places&sensor=false&callback=initialize_map&key=";
+    script.type = 'text/javascript';
     script.src = src;
     document.body.appendChild(script);
 
