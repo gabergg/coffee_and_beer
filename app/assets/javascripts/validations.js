@@ -4,6 +4,8 @@ var validEmail;
 var validPhone;
 
 function validateForm() {
+    $('div').remove('.alert');
+
     hasEmail = true;
     hasPhone = true;
     validEmail = false;
@@ -23,8 +25,9 @@ function validateForm() {
         html_error = "<div class='alert alert-error'>" +
             "<a href='#' class='close' data-dismiss='alert'>&times;</a>" +
             "<strong>Whoops!</strong> Your form looks great! Except..." +
+            "<ul>" +
             error_set(reasons) +
-            "</div>"
+            "</ul></div>"
 
         $('#home_content').prepend(html_error);
         return false;
@@ -43,7 +46,9 @@ function validateForm() {
 function error_set(reasons) {
     var error_html = "";
     for (var i = 0; i < reasons.length; i++) {
-        error_html += "<p>" + reasons[i] + "</p>";
+        if(reasons[i] == "") continue;
+        error_html += "<li>" + reasons[i] + "</li>";
+        console.log("line " + i + ": " + error_html);
     }
     return error_html;
 }
