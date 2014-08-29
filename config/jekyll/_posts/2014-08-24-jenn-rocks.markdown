@@ -1,11 +1,11 @@
 ---
 layout: post
 published: true
-title: jenn-rocks
+title: Hey there Adamface ;)
 ---
 
-Gosh I love jenn so much.
+Ey bro, can't wait to hang.
 
 ---
 
-Hey!
+This is a sick blog platform integrated into the ish, but no posties yet.
