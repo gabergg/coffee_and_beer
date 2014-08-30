@@ -139,6 +139,7 @@ function saveData() {
 }
 
 function placeDBMarkers(map, markerSet) {
+    var markersForCluster = [];
     for (var i = 0; i < markerSet.length; i++) {
         if (markerSet[i].latitude && markerSet[i].longitude) {
 
@@ -146,6 +147,21 @@ function placeDBMarkers(map, markerSet) {
                 map: map,
                 position: {lat: markerSet[i].latitude, lng: markerSet[i].longitude}
             });
+            google.maps.event.addListener(archiveMarker, 'mouseover', function() {
+                console.log(archiveMarker.getPosition());
+                infowindow = new google.maps.InfoWindow({
+                    content: html
+                });
+            });
+            google.maps.event.addListener(archiveMarker, 'mouseout', function() {
+                console.log(archiveMarker.getPosition());
+                infowindow = new google.maps.InfoWindow({
+                    content: html
+                });
+            });
+            markersForCluster.push(archiveMarker);
         }
     }
+
+    var markerCluster = new MarkerClusterer(map, markersForCluster);
 }
