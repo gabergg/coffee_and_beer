@@ -1,7 +1,8 @@
 class StaticPagesController < ApplicationController
   def home
     gon.gmaps_api_key = ENV["GMAPS_API_KEY"]
-    gon.markers = Meeting.all.select("latitude, longitude")
+    @markers = Meeting.all.select("name, latitude, longitude")
+    gon.markers = @markers.map { |marker| {name: marker.name.split(' ').first, latitude: marker.latitude, longitude: marker.longitude} }
   end
 
   def blog
@@ -12,4 +13,5 @@ class StaticPagesController < ApplicationController
 
   def contact
   end
+
 end

@@ -1,5 +1,6 @@
 var allMarkers = [];
 var infowindow;
+var markerInfoWindow;
 var map;
 
 function initialize_map() {
@@ -29,6 +30,9 @@ function initialize_map() {
 
     infowindow = new google.maps.InfoWindow({
         content: html
+    });
+
+    markerInfoWindow = new google.maps.InfoWindow({
     });
 
     // Create the search box and link it to the UI element.
@@ -100,6 +104,7 @@ function initialize_map() {
         searchBox.setBounds(bounds);
     });
 
+    console.log(gon.markers);
     placeDBMarkers(map, gon.markers)
 
 }
@@ -142,22 +147,19 @@ function placeDBMarkers(map, markerSet) {
     var markersForCluster = [];
     for (var i = 0; i < markerSet.length; i++) {
         if (markerSet[i].latitude && markerSet[i].longitude) {
-
+            console.log(markerSet[i]);
             var archiveMarker = new google.maps.Marker({
                 map: map,
+                name: markerSet[i].name,
                 position: {lat: markerSet[i].latitude, lng: markerSet[i].longitude}
             });
-            google.maps.event.addListener(archiveMarker, 'mouseover', function() {
-                console.log(archiveMarker.getPosition());
-                infowindow = new google.maps.InfoWindow({
-                    content: html
-                });
+            google.maps.event.addListener(archiveMarker, 'mouseover', function () {
+                markerInfoWindow.setContent("<div class='hover_name'><strong>" + this.name + "</strong></div>");
+                markerInfoWindow.open(map, this);
+                $(".gm-style-iw").next("div").hide();
             });
-            google.maps.event.addListener(archiveMarker, 'mouseout', function() {
-                console.log(archiveMarker.getPosition());
-                infowindow = new google.maps.InfoWindow({
-                    content: html
-                });
+            google.maps.event.addListener(archiveMarker, 'mouseout', function () {
+                markerInfoWindow.close();
             });
             markersForCluster.push(archiveMarker);
         }
