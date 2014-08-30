@@ -1,9 +1,18 @@
 class MeetingsController < ApplicationController
 
   def create
+    @duplicate_location = Meeting.where(latitude: params[:latitude], longitude: params[:longitude])
+    @newLat = params[:latitude].to_f
+    @newLong = params[:longitude].to_f
+    unless @duplicate_location.length == 0
+      @shift = (rand(0..1)*2-1)*0.1/100
+      @newLat+=@shift
+      @shift = (rand(0..1)*2-1)*0.1/100
+      @newLong+=@shift
+    end
     @meeting = Meeting.new(email: params[:email], name: params[:name], phone: params[:phone],
                            meeting_type: params[:meeting_type],
-                           latitude: params[:latitude].to_f, longitude: params[:longitude].to_f)
+                           latitude: @newLat, longitude: @newLong)
     begin
       @meeting.save!
     rescue => e

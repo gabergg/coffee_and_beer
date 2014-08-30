@@ -707,7 +707,6 @@ function MarkerClusterer(map, opt_markers, opt_options) {
     this.setMap(map); // Note: this causes onAdd to be called
 }
 
-
 /**
  * Implementation of the onAdd interface method.
  * @ignore
@@ -767,7 +766,8 @@ MarkerClusterer.prototype.onRemove = function () {
  * Implementation of the draw interface method.
  * @ignore
  */
-MarkerClusterer.prototype.draw = function () {};
+MarkerClusterer.prototype.draw = function () {
+};
 
 
 /**
