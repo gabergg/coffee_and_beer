@@ -1,28 +1,11 @@
-== README
+A tracker, tool, and blog for our adventure out of the valley.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+We'll be posting information, our route, our photos, and more!
 
-Things you may want to cover:
+Check out our interactive trip map, and add yourself to our route! We'd love to meet you.
 
-* Ruby version
+Coffeenbeer.com
 
-* System dependencies
+Ruby 2.0.0, Rails 4.0.8
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+2014 Gabe Grazier G'Sell and Jenn Leung
