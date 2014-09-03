@@ -3,6 +3,7 @@ var markerInfoWindow;
 var map;
 var allMarkers = [];
 window.globalMarkers = [];
+//var oms;
 
 function initialize_map() {
     var update_timeout = null;
@@ -37,6 +38,8 @@ function initialize_map() {
 
     markerInfoWindow = new google.maps.InfoWindow({
     });
+
+    //oms = new OverlappingMarkerSpiderfier(map);
 
     // Create the search box and link it to the UI element.
     var input = /** @type {HTMLInputElement} */(
@@ -121,17 +124,15 @@ function initialize_map() {
 
 function loadScript() {
 
+    $.getScript("http://maps.google.com/maps/api/js?libraries=places&sensor=false&callback=initialize_map");
+
+    /*
     var mapScript = document.createElement('script');
     var src = "http://maps.google.com/maps/api/js?libraries=places&sensor=false&callback=initialize_map";
     mapScript.type = 'text/javascript';
     mapScript.src = src;
     document.body.appendChild(mapScript);
-
-    var spiderScript = document.createElement('script');
-    var src = "/spiderify.js";
-    spiderScript.type = 'text/javascript';
-    spiderScript.src = src;
-    document.body.appendChild(spiderScript);
+    */
 
 }
 
@@ -163,7 +164,6 @@ function saveData() {
 function placeDBMarkers(map, markerSet) {
     var markersForCluster = [];
     //Spiderfy at max zoom w/ two markers on same location, when clustering doesn't work
-    //var oms = new OverlappingMarkerSpiderfier(map);
 
     for (var i = 0; i < markerSet.length; i++) {
         if (markerSet[i].latitude && markerSet[i].longitude) {
