@@ -10,6 +10,7 @@ $(function () {
 });
 
 $(window).scroll(function () {
+    var currentScroll = $(this).scrollTop();
     if (currentScroll <= headerOrgOffset) {
         $('#header-wrap').show();
     }
