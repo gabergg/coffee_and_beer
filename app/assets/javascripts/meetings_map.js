@@ -1,7 +1,9 @@
-var allMarkers = [];
 var infowindow;
 var markerInfoWindow;
 var map;
+var allMarkers = [];
+window.globalMarkers = [];
+//var oms;
 
 function initialize_map() {
     var update_timeout = null;
@@ -12,7 +14,7 @@ function initialize_map() {
         center: latlng,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         zoomControlOptions: {
-            style: google.maps.ZoomControlStyle.DEFAULT,
+            style: google.maps.ZoomControlStyle.DEFAULT
         }
     }
 
@@ -36,6 +38,8 @@ function initialize_map() {
 
     markerInfoWindow = new google.maps.InfoWindow({
     });
+
+    //oms = new OverlappingMarkerSpiderfier(map);
 
     // Create the search box and link it to the UI element.
     var input = /** @type {HTMLInputElement} */(
@@ -113,18 +117,22 @@ function initialize_map() {
         searchBox.setBounds(bounds);
     });
 
-    console.log(gon.markers);
-    placeDBMarkers(map, gon.markers)
+    placeDBMarkers(map, gon.markers);
+    if (window.globalMarkers.length > 0) placeDBMarkers(map, window.globalMarkers);
 
 }
 
 function loadScript() {
 
-    var script = document.createElement('script');
-    var src = "http://maps.google.com/maps/api/js?libraries=places&sensor=false&callback=initialize_map&key=";
-    script.type = 'text/javascript';
-    script.src = src;
-    document.body.appendChild(script);
+    $.getScript("http://maps.google.com/maps/api/js?libraries=places&sensor=false&callback=initialize_map");
+
+    /*
+    var mapScript = document.createElement('script');
+    var src = "http://maps.google.com/maps/api/js?libraries=places&sensor=false&callback=initialize_map";
+    mapScript.type = 'text/javascript';
+    mapScript.src = src;
+    document.body.appendChild(mapScript);
+    */
 
 }
 
@@ -137,13 +145,14 @@ function saveData() {
     var name = $('#name').val();
     var phone = $('#phone').val();
     var meeting_type = $('#meeting_type').val();
-    gon.allMarkers = allMarkers;
     var lastMarker = allMarkers.pop();
     var latitude = lastMarker.getPosition().lat().toString();
     var longitude = lastMarker.getPosition().lng().toString();
     var dataSet = {"email": email, "name": name, "phone": phone, "meeting_type": meeting_type,
         "latitude": latitude, "longitude": longitude};
     infowindow.close();
+
+    window.globalMarkers.push({ name: name, latitude: parseFloat(latitude), longitude: parseFloat(longitude) });
 
     $.ajax({
         url: '/meetings',
@@ -154,14 +163,16 @@ function saveData() {
 
 function placeDBMarkers(map, markerSet) {
     var markersForCluster = [];
+    //Spiderfy at max zoom w/ two markers on same location, when clustering doesn't work
+
     for (var i = 0; i < markerSet.length; i++) {
         if (markerSet[i].latitude && markerSet[i].longitude) {
-            console.log(markerSet[i]);
             var archiveMarker = new google.maps.Marker({
                 map: map,
                 name: markerSet[i].name,
                 position: {lat: markerSet[i].latitude, lng: markerSet[i].longitude}
             });
+            //oms.addMarker(archiveMarker);
             google.maps.event.addListener(archiveMarker, 'mouseover', function () {
                 markerInfoWindow.setContent("<div class='hover_name'><strong>" + this.name + "</strong></div>");
                 markerInfoWindow.open(map, this);
@@ -174,6 +185,7 @@ function placeDBMarkers(map, markerSet) {
             markersForCluster.push(archiveMarker);
         }
     }
+
 
     var markerCluster = new MarkerClusterer(map, markersForCluster);
 

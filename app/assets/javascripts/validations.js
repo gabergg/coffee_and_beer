@@ -48,7 +48,6 @@ function error_set(reasons) {
     for (var i = 0; i < reasons.length; i++) {
         if(reasons[i] == "") continue;
         error_html += "<li>" + reasons[i] + "</li>";
-        console.log("line " + i + ": " + error_html);
     }
     return error_html;
 }
@@ -58,7 +57,6 @@ function trim(s) {
 }
 
 function validateEmail(fld) {
-    console.log(fld);
     var value = fld[0].value;
     var error = "";
     var tfld = trim(value);                        // value of field with whitespace trimmed off
@@ -66,15 +64,12 @@ function validateEmail(fld) {
     var illegalChars = /[\(\)\<\>\,\;\:\\\"\[\]]/;
 
     if (value == "") {
-        console.log("1");
         hasEmail = false;
     } else if (!emailFilter.test(tfld)) {              //test email for illegal characters
         fld.addClass('invalid-input');
-        console.log("2");
         error = "That's not an email address!";
     } else if (value.match(illegalChars)) {
         fld.addClass('invalid-input');
-        console.log("3");
         error = "Your email address has some illegal characters!";
     } else {
         validEmail = true;
