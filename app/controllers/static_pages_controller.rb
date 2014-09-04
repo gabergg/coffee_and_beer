@@ -9,7 +9,7 @@ class StaticPagesController < ApplicationController
       }
       {name: @name_list.join(', '), latitude: marker.latitude, longitude: marker.longitude}
     }
-
+    
   end
 
   def blog
