@@ -11,7 +11,7 @@ class StaticPagesController < ApplicationController
       }
       {name: @name_list.join(', '), latitude: marker["latitude"].to_f, longitude: marker["longitude"].to_f}
     }
-
+    
   end
 
   def blog
