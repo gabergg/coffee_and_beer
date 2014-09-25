@@ -230,7 +230,7 @@ label {
 
 .status {
   height:17em;
-  background-image: image-url("/assets/jenngabe.jpg");
+  background-image: image-url(image_path('jenngabe.jpg'));
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center; 
