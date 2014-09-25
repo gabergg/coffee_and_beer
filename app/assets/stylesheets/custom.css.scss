@@ -155,7 +155,7 @@ ul.nav a:link, a:visited {
   width: 940px;
   margin-right: auto;
   margin-left: auto;
-  height: auto;
+  height: 3.5em;
 }
 
 .container {
@@ -191,6 +191,7 @@ ul.nav a:link, a:visited {
 #map-canvas {
   width: 100%;
   height: 600px;
+  margin-bottom:5em;
 }
 
 //to fix squished zoom bar, google map image distortion
@@ -214,9 +215,7 @@ label {
 }
 
 /* padding bottom of map, more spacious */
-#home_content {
-  margin-bottom: 140px;
-}
+
 .status {
   height:15em;
   //background-image: image-url("frontpage.jpg");
