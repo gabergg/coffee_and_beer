@@ -5,237 +5,252 @@
 $grayMediumLight: #eaeaea;
 
 @mixin box_sizing {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* universal */
 
 html {
-  overflow-y: scroll;
+    overflow-y: scroll;
 }
 
 body {
-  padding-top: 60px;
+    padding-top: 60px;
 }
 
 section {
-  overflow: auto;
+    overflow: auto;
 }
 
 textarea {
-  resize: vertical;
+    resize: vertical;
 }
 
 .center {
-  text-align: center;
-  h1 {
-    margin-bottom: 10px;
-  }
+    text-align: center;
+    h1 {
+        margin-bottom: 10px;
+    }
 }
 
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1;
+    line-height: 1;
 }
 
 h1 {
-  font-size: 3em;
-  letter-spacing: -2px;
-  margin-bottom: 30px;
-  text-align: center;
+    font-size: 3em;
+    letter-spacing: -2px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 h2 {
-  font-size: 1.2em;
-  letter-spacing: -1px;
-  margin-bottom: 30px;
-  #text-align: center;
-  font-weight: normal;
-  color: $grayLight;
+    font-size: 1.2em;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+    #text-align: center;
+    font-weight: normal;
+    color: $grayLight;
 }
 
 p {
-  font-size: 1.1em;
-  line-height: 1.7em;
+    font-size: 1.1em;
+    line-height: 1.7em;
 }
 
 /* header */
 
 #logo {
-  float: left;
-  margin: 0px 10px 10px 10px;
-  font-size: 1.5em;
-  letter-spacing: -1px;
-  font-weight: bold;
-  width: 1.75em;
-  height: auto;
-  line-height: 1;
-  &:hover {
-    color: white;
-    text-decoration: none;
-  }
+    float: left;
+    margin: 0px 10px 10px 10px;
+    font-size: 1.5em;
+    letter-spacing: -1px;
+    font-weight: bold;
+    width: 1.75em;
+    height: auto;
+    line-height: 1;
+    &:hover {
+        color: white;
+        text-decoration: none;
+    }
 }
 
 #logo_text {
-  float: left;
-  font-size: 1.3em;
-  color: #0099FF;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  font-weight: bold;
-  width: 10em;
-  height: auto;
-  line-height: 1;
-  &:hover {
-    color: blue;
-    text-decoration: none;
-  }
+    float: left;
+    font-size: 1.3em;
+    color: #0099FF;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: bold;
+    width: 10em;
+    height: auto;
+    line-height: 1;
+    &:hover {
+        color: blue;
+        text-decoration: none;
+    }
 }
 
 /* nav bad */
 .topmargin {
-  margin-top: 1.5em;
+    margin-top: 1.5em;
 }
+
 .navbar .nav > li > a {
-  padding: 0 15px 10px;
+    padding: 0 15px 10px;
 }
+
 ul.nav a:link, a:visited {
-  display: block;
-  //width: 130px;
-  font-weight: bold;
-  text-align: center;
-  //padding: 4px;
-  text-decoration: none;
-  text-transform: uppercase;
-  &:hover {
+    display: block;
+    //width: 130px;
+    font-weight: bold;
+    text-align: center;
+    //padding: 4px;
     text-decoration: none;
-  }
+    text-transform: uppercase;
+    &:hover {
+        text-decoration: none;
+    }
 }
-.activeNav{
-  border-bottom: 3px solid black;
-  color: #000000 !important;
+
+.activeNav {
+    border-bottom: 3px solid black;
+    color: #000000 !important;
 }
+
 .hero-unit {
-  margin-top: 5em;
+    margin-top: 5em;
 }
 
 /* footer */
 
 #footer {
-  margin-top: 45px;
-  padding-top: 5px;
-  padding-right: 30px;
-  padding-bottom: 10px;
-  a {
-    color: $gray;
-    &:hover {
-      color: $grayDarker;
+    //z-index: 1;
+    margin-top: 45px;
+    padding-top: 5px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    a {
+        color: $gray;
+        &:hover {
+            color: $grayDarker;
+        }
     }
-  }
-  small {
-    float: left;
-  }
-  ul {
-    float: right;
-    list-style: none;
-    li {
-      float: left;
-      margin-left: 10px;
+    small {
+        float: left;
     }
-  }
+    ul {
+        float: right;
+        list-style: none;
+        li {
+            float: left;
+            margin-left: 10px;
+        }
+    }
 }
 
 /* homepage */
 #home_banner {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 #navcontainer {
-  width: 940px;
-  margin-right: auto;
-  margin-left: auto;
-  height: 3.5em;
+    width: 940px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 3.5em;
 }
 
 .container {
-  margin-top: 5em;
+    margin-top: 5em;
 }
 
 .words {
-  font-family: 'Pacifico', cursive;
-  display: inline-block;
-  position: absolute;
-  color: #44484A;
-  text-align: left;
-  font-size:30px;
+    font-family: 'Pacifico', cursive;
+    display: inline-block;
+    position: absolute;
+    color: #44484A;
+    text-align: left;
+    font-size: 30px;
 }
+
 .words:hover {
     text-decoration: none;
 }
+
 #front-words {
-  padding-top:.5em;
-  font-size:4em;
-  padding-left:.2em;
-  margin-left:1%;
-  color:#FFFFFF;
-  opacity: 0.85;
-  filter: alpha(opacity=85); /* For IE8 and earlier */
-  font-weight: bold;
+    padding-top: .5em;
+    font-size: 4em;
+    padding-left: .2em;
+    margin-left: 1%;
+    color: #FFFFFF;
+    opacity: 0.85;
+    filter: alpha(opacity=85); /* For IE8 and earlier */
+    font-weight: bold;
 }
+
 #front-words_bottom {
-  padding-top:.5em;
-  font-size:1em;
-  margin-left:57%;
-  color:#FFFFFF;
-  font-weight: bold;
-  border-bottom: 8px solid white;
+    padding-top: .5em;
+    font-size: 1em;
+    margin-left: 57%;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-bottom: 8px solid white;
 }
+
 #place {
-  font-size:3.5em;
-  margin-left:12.2em;
-  margin-top:-1.4em;
-  font-weight: medium;
+    font-size: 3.5em;
+    margin-left: 12.2em;
+    margin-top: -1.4em;
+    font-weight: medium;
 }
+
 /* map div */
 #map-canvas {
-  width: 100%;
-  height: 600px;
-  margin-bottom:10em;
+    width: 100%;
+    height: 600px;
+    margin-bottom: 10em;
 }
 
 //to fix squished zoom bar, google map image distortion
 #map-canvas img {
-  max-width: none;
+    max-width: none;
 }
 
 //push name down from top of info window so it doesnt get covered by address input
 #infowindow-content {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 //input labels lined up with input in map form
 label {
-  display: inline-block;
+    display: inline-block;
 }
 
 //bad input on forms for map, red outline of inputs
 .invalid-input {
-  border: 1px solid red !important;
+    border: 1px solid red !important;
 }
 
 /* padding bottom of map, more spacious */
 
 .status {
-  height:17em;
-  background-image: image-url('<%= asset_path "jenngabe.jpg" %>');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center; 
-  background-size: 65%
+    height: 17em;
+    background-image: image-url('jenngabe.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 65%
 }
+
 .hover_name {
-  margin-left:20px;
+    margin-left: 20px;
+}
+
+.pagination {
+    //z-index: 1;
 }
