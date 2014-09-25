@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: eating-peanuts
+title: Eating Peanuts
 ---
 
 I love peanuts. I love to eat peanuts.
