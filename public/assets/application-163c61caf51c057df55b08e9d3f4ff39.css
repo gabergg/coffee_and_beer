@@ -6819,42 +6819,42 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
 
 /* mixins, variables, etc. */
 /* universal */
-/* line 15, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss */
+/* line 15, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss.erb */
 html {
   overflow-y: scroll;
 }
 
-/* line 19, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss */
+/* line 19, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss.erb */
 body {
   padding-top: 60px;
 }
 
-/* line 23, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss */
+/* line 23, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss.erb */
 section {
   overflow: auto;
 }
 
-/* line 27, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss */
+/* line 27, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss.erb */
 textarea {
   resize: vertical;
 }
 
-/* line 31, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss */
+/* line 31, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss.erb */
 .center {
   text-align: center;
 }
-/* line 33, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss */
+/* line 33, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss.erb */
 .center h1 {
   margin-bottom: 10px;
 }
 
 /* typography */
-/* line 40, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss */
+/* line 40, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss.erb */
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
 
-/* line 44, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss */
+/* line 44, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss.erb */
 h1 {
   font-size: 3em;
   letter-spacing: -2px;
@@ -6862,7 +6862,7 @@ h1 {
   text-align: center;
 }
 
-/* line 51, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss */
+/* line 51, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss.erb */
 h2 {
   font-size: 1.2em;
   letter-spacing: -1px;
@@ -6872,14 +6872,14 @@ h2 {
   color: #999999;
 }
 
-/* line 60, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss */
+/* line 60, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss.erb */
 p {
   font-size: 1.1em;
   line-height: 1.7em;
 }
 
 /* header */
-/* line 67, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss */
+/* line 67, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss.erb */
 #logo {
   float: left;
   margin: 0px 10px 10px 10px;
@@ -6890,13 +6890,13 @@ p {
   height: auto;
   line-height: 1;
 }
-/* line 76, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss */
+/* line 76, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss.erb */
 #logo:hover {
   color: white;
   text-decoration: none;
 }
 
-/* line 82, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss */
+/* line 82, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss.erb */
 #logo_text {
   float: left;
   font-size: 1.3em;
@@ -6908,24 +6908,24 @@ p {
   height: auto;
   line-height: 1;
 }
-/* line 92, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss */
+/* line 92, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss.erb */
 #logo_text:hover {
   color: blue;
   text-decoration: none;
 }
 
 /* nav bad */
-/* line 99, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss */
+/* line 99, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss.erb */
 .topmargin {
   margin-top: 1.5em;
 }
 
-/* line 102, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss */
+/* line 102, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss.erb */
 .navbar .nav > li > a {
   padding: 0 15px 10px;
 }
 
-/* line 105, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss */
+/* line 105, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss.erb */
 ul.nav a:link, a:visited {
   display: block;
   font-weight: bold;
@@ -6933,60 +6933,60 @@ ul.nav a:link, a:visited {
   text-decoration: none;
   text-transform: uppercase;
 }
-/* line 113, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss */
+/* line 113, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss.erb */
 ul.nav a:link:hover, a:visited:hover {
   text-decoration: none;
 }
 
-/* line 117, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss */
+/* line 117, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss.erb */
 .activeNav {
   border-bottom: 3px solid black;
   color: #000000 !important;
 }
 
-/* line 121, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss */
+/* line 121, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss.erb */
 .hero-unit {
   margin-top: 5em;
 }
 
 /* footer */
-/* line 127, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss */
+/* line 127, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss.erb */
 #footer {
   margin-top: 45px;
   padding-top: 5px;
   padding-right: 30px;
   padding-bottom: 10px;
 }
-/* line 132, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss */
+/* line 132, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss.erb */
 #footer a {
   color: #555555;
 }
-/* line 134, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss */
+/* line 134, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss.erb */
 #footer a:hover {
   color: #222222;
 }
-/* line 138, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss */
+/* line 138, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss.erb */
 #footer small {
   float: left;
 }
-/* line 141, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss */
+/* line 141, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss.erb */
 #footer ul {
   float: right;
   list-style: none;
 }
-/* line 144, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss */
+/* line 144, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss.erb */
 #footer ul li {
   float: left;
   margin-left: 10px;
 }
 
 /* homepage */
-/* line 152, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss */
+/* line 152, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss.erb */
 #home_banner {
   max-width: 100%;
 }
 
-/* line 156, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss */
+/* line 156, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss.erb */
 #navcontainer {
   width: 940px;
   margin-right: auto;
@@ -6994,12 +6994,12 @@ ul.nav a:link:hover, a:visited:hover {
   height: 3.5em;
 }
 
-/* line 163, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss */
+/* line 163, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss.erb */
 .container {
   margin-top: 5em;
 }
 
-/* line 167, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss */
+/* line 167, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss.erb */
 .words {
   font-family: 'Pacifico', cursive;
   display: inline-block;
@@ -7009,12 +7009,12 @@ ul.nav a:link:hover, a:visited:hover {
   font-size: 30px;
 }
 
-/* line 175, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss */
+/* line 175, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss.erb */
 .words:hover {
   text-decoration: none;
 }
 
-/* line 178, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss */
+/* line 178, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss.erb */
 #front-words {
   padding-top: .5em;
   font-size: 4em;
@@ -7027,7 +7027,7 @@ ul.nav a:link:hover, a:visited:hover {
   font-weight: bold;
 }
 
-/* line 188, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss */
+/* line 188, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss.erb */
 #front-words_bottom {
   padding-top: .5em;
   font-size: 1em;
@@ -7037,7 +7037,7 @@ ul.nav a:link:hover, a:visited:hover {
   border-bottom: 8px solid white;
 }
 
-/* line 196, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss */
+/* line 196, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss.erb */
 #place {
   font-size: 3.5em;
   margin-left: 12.2em;
@@ -7046,35 +7046,35 @@ ul.nav a:link:hover, a:visited:hover {
 }
 
 /* map div */
-/* line 203, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss */
+/* line 203, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss.erb */
 #map-canvas {
   width: 100%;
   height: 600px;
   margin-bottom: 20em;
 }
 
-/* line 210, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss */
+/* line 210, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss.erb */
 #map-canvas img {
   max-width: none;
 }
 
-/* line 215, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss */
+/* line 215, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss.erb */
 #infowindow-content {
   margin-top: 20px;
 }
 
-/* line 220, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss */
+/* line 220, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss.erb */
 label {
   display: inline-block;
 }
 
-/* line 225, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss */
+/* line 225, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss.erb */
 .invalid-input {
   border: 1px solid red !important;
 }
 
 /* padding bottom of map, more spacious */
-/* line 231, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss */
+/* line 231, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss.erb */
 .status {
   height: 17em;
   background-image: url(/assets/jenngabe.jpg);
@@ -7084,7 +7084,7 @@ label {
   background-size: 65%;
 }
 
-/* line 239, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss */
+/* line 239, /home/gabe/Code/coffee_and_beer/app/assets/stylesheets/custom.css.scss.erb */
 .hover_name {
   margin-left: 20px;
 }
