@@ -112,11 +112,11 @@ ul.nav a:link, a:visited {
   text-transform: uppercase;
   &:hover {
     text-decoration: none;
-    border-bottom: 3px solid black;
   }
 }
 .activeNav{
   border-bottom: 3px solid black;
+  color: #000000 !important;
 }
 .hero-unit {
   margin-top: 5em;
@@ -229,7 +229,7 @@ label {
 /* padding bottom of map, more spacious */
 
 .status {
-  height:15em;
+  height:17em;
   background-image: image-url("jenngabe.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
