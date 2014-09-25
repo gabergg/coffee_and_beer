@@ -166,14 +166,27 @@ ul.nav a:link, a:visited {
   font-family: 'Pacifico', cursive;
   display: inline-block;
   position: absolute;
-  color: #E6E6E6;
+  color: #44484A;
   text-align: left;
-  margin-top: 10%;
-  margin-left: 60%;
-  font-size:80px;
-  
+  font-size:30px;
 }
-
+.words:hover {
+    text-decoration: none;
+}
+#front-words {
+  padding-top:.5em;
+  font-size:5em;
+  padding-left:.2em;
+  margin-left:18%;
+  color:#000000;
+  font-weight: bold;
+}
+#place {
+  font-size:3.5em;
+  margin-left:12.2em;
+  margin-top:-1.4em;
+  font-weight: medium;
+}
 /* map div */
 #map-canvas {
   width: 100%;
@@ -204,7 +217,14 @@ label {
 #home_content {
   margin-bottom: 140px;
 }
-
+.status {
+  height:15em;
+  //background-image: image-url("frontpage.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left center; 
+  background-size: 100%
+}
 .hover_name {
   margin-left:20px;
 }
