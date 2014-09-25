@@ -8,6 +8,7 @@
         <ul class="nav pull-right">
           <li class="<%= 'activeNav' if current_page?(root_path) %>"><%= link_to "Home", root_path %></li>
           <li class="<%= 'activeNav' if current_page?(:controller => 'blog', :action => 'proxy') %>"><%= link_to "Blog", 'blog#proxy' %></li>
+          <li class="<%= 'activeNav' if current_page?(photos_path) %>"><%= link_to "Photos", photos_path %></li>
           <li class="<%= 'activeNav' if current_page?(about_path) %>"><%= link_to "About", about_path %></li>
           <li class="<%= 'activeNav' if current_page?(contact_path) %>"><%= link_to "Contact", contact_path %></li>
         </ul>

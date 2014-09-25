@@ -15,7 +15,7 @@ title: Blog Index
     <h1><a href="/blog{{ post.url }}">{{ post.title }}</a></h1>
 
     <p class="author">
-        <span class="date">{{ post.date }}</span>
+        <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
     </p>
 
     <div class="content">
