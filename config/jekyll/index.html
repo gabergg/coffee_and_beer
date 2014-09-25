@@ -1,13 +1,52 @@
 ---
 layout: default
-title: Zach Bruhnke
+title: Blog Index
 ---
 
 <div id="home">
-  <h1>B(eer)log</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="/blog{{ post.url }}">{{ post.title }}</a></li>
+    <h1>Blog</h1>
+    <ul class="archive-feed">
+        <li><a href="/blog/archive">Archive</a></li>
+        <li><span>Feed</span></li>
+    </ul>
+
+    <!-- This loops through the paginated posts -->
+    {% for post in paginator.posts %}
+    <h1><a href="/blog{{ post.url }}">{{ post.title }}</a></h1>
+
+    <p class="author">
+        <span class="date">{{ post.date }}</span>
+    </p>
+
+    <div class="content">
+        {{ post.content }}
+    </div>
     {% endfor %}
-  </ul>
+
+    {% if paginator.total_pages > 1 %}
+    <div class="pagination" style="margin-bottom:50px">
+        {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Newer</a>
+        {% else %}
+        <span>&laquo; Newer</span>
+        {% endif %}
+
+        {% for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page %}
+        <em>{{ page }}</em>
+        {% elsif page == 1 %}
+        <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+        {% else %}
+        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">
+            {{ page }}</a>
+        {% endif %}
+        {% endfor %}
+
+        {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older &raquo;</a>
+        {% else %}
+        <span>Older &raquo;</span>
+        {% endif %}
+    </div>
+    {% endif %}
 </div>
