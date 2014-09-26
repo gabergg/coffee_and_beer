@@ -4,27 +4,25 @@ title: Blog Index
 ---
 
 <div id="home">
-    <h1>Blog</h1>
-    <ul class="archive-feed">
-        <li><a href="/blog/archive">Archive</a></li>
-        <li><span>Feed</span></li>
-    </ul>
-
+    <div class="row-fluid">
+    <div class="span10 well">
     <!-- This loops through the paginated posts -->
+     
     {% for post in paginator.posts %}
-    <h1><a href="/blog{{ post.url }}">{{ post.title }}</a></h1>
-
-    <p class="author">
+    
+    <h3 class="span8 content" style="margin:0px;"><a href="/blog{{ post.url }}">{{ post.title }}</a></h3>
+    
+    <p class="span3 author">
         <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
     </p>
 
-    <div class="content">
+    <div class="span11 content">
         {{ post.content }}
     </div>
     {% endfor %}
-
+   
     {% if paginator.total_pages > 1 %}
-    <div class="pagination" style="margin-bottom:50px">
+    <div class="pagination span4 offset5" style="margin-top:50px">
         {% if paginator.previous_page %}
         <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Newer</a>
         {% else %}
@@ -49,4 +47,10 @@ title: Blog Index
         {% endif %}
     </div>
     {% endif %}
+</div>
+<ul class="archive-feed span2 well" style="list-style-type: none;">
+        <li><a href="/blog/archive">Archive</a></li>
+        <li><span>Feed</span></li>
+    </ul>
+</div>
 </div>

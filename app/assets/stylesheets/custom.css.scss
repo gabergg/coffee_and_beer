@@ -27,7 +27,12 @@ section {
 textarea {
   resize: vertical;
 }
-
+.content {
+  margin-left: 0px !important;
+  a:hover {
+    text-decoration:none;
+  }
+}
 .center {
   text-align: center;
   h1 {
@@ -239,4 +244,8 @@ label {
 }
 .hover_name {
   margin-left:20px;
+}
+.pagination {
+  margin-bottom: 0px !important;
+  margin-top:2em;
 }
