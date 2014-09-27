@@ -3,52 +3,66 @@ layout: default
 title: Blog Index
 ---
 
+
+<h1> {{ page.title }} </h1>
+<h2> {{ page.date | date: '%B %d, %Y' }} </h2>
+
+
 <div id="home">
     <div class="row-fluid">
-    <div class="span10">
-    <!-- This loops through the paginated posts -->
-     
-    {% for post in paginator.posts %}
-    <p class="span12 author" style="margin-left: 0px;">
-        <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
-    </p>
-    <h3 class="span12 content post-title"><a href="/blog{{ post.url }}" class="post-title">{{ post.title }}</a></h3>
-    <br>
-    <div class="span11 content" style="margin-bottom: 3em;">
-        {{ post.content }}
-    </div>
-    {% endfor %}
-   
-    {% if paginator.total_pages > 1 %}
-    <div class="pagination span4 offset5" style="margin-top:5em; padding-bottom:3.125em">
-        {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Newer</a>
-        {% else %}
-        <span>&laquo; Newer</span>
-        {% endif %}
+        <div class="span10">
+            <!-- This loops through the paginated posts -->
 
-        {% for page in (1..paginator.total_pages) %}
-        {% if page == paginator.page %}
-        <em>{{ page }}</em>
-        {% elsif page == 1 %}
-        <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-        {% else %}
-        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">
-            {{ page }}</a>
-        {% endif %}
-        {% endfor %}
+            {% for post in paginator.posts %}
+            {% if minutes == 0 %}
+            {% assign minutes = 1 %}
+            {% endif %}
+            {% assign minutes = post.content | number_of_words | divided_by: 180 %}
+            <p class="span12 author" style="margin-left: 0px;">
+                <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
+                <span class="date" style="float:right">{{ minutes }} minute read</span>
+            </p>
 
-        {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older &raquo;</a>
-        {% else %}
-        <span>Older &raquo;</span>
-        {% endif %}
+            <h3 class="span12 content post-title"><a href="/blog{{ post.url }}" class="post-title">{{ post.title }}</a>
+            </h3>
+            <br>
+
+            <div class="span11 content" style="margin-bottom: 3em;">
+                {{ post.content }}
+            </div>
+            {% endfor %}
+
+            {% if paginator.total_pages > 1 %}
+            <div class="pagination span4 offset5" style="margin-top:5em; padding-bottom:3.125em">
+                {% if paginator.previous_page %}
+                <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;
+                    Newer</a>
+                {% else %}
+                <span>&laquo; Newer</span>
+                {% endif %}
+
+                {% for page in (1..paginator.total_pages) %}
+                {% if page == paginator.page %}
+                <em>{{ page }}</em>
+                {% elsif page == 1 %}
+                <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+                {% else %}
+                <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">
+                    {{ page }}</a>
+                {% endif %}
+                {% endfor %}
+
+                {% if paginator.next_page %}
+                <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older &raquo;</a>
+                {% else %}
+                <span>Older &raquo;</span>
+                {% endif %}
+            </div>
+            {% endif %}
+        </div>
+        <ul class="archive-feed span2" style="list-style-type: none;">
+            <li><a href="/blog/archive">Archive</a></li>
+            <li><span>Feed</span></li>
+        </ul>
     </div>
-    {% endif %}
-</div>
-<ul class="archive-feed span2" style="list-style-type: none;">
-        <li><a href="/blog/archive">Archive</a></li>
-        <li><span>Feed</span></li>
-    </ul>
-</div>
 </div>
