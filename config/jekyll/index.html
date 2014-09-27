@@ -9,12 +9,12 @@ title: Blog Index
     <!-- This loops through the paginated posts -->
      
     {% for post in paginator.posts %}
-    <p class="span12 author" style="margin-left: 0px; margin-top: 3em;">
+    <p class="span12 author" style="margin-left: 0px;">
         <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
     </p>
     <h3 class="span12 content post-title"><a href="/blog{{ post.url }}" class="post-title">{{ post.title }}</a></h3>
     <br>
-    <div class="span11 content">
+    <div class="span11 content" style="margin-bottom: 3em;">
         {{ post.content }}
     </div>
     {% endfor %}
