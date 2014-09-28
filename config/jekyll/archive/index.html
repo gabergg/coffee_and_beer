@@ -9,7 +9,7 @@ title: Blog Archive
         {% capture currentyear %}{{post.date | date: "%B %Y"}}{% endcapture %}
         {% if currentyear != year %}
         {% unless forloop.first %}</ul>{% endunless %}
-        <h1>{{ currentyear }}</h1>
+        <h2>{{ currentyear }}</h2>
         <ul class="content" style="list-style-type: none">
             {% capture year %}{{currentyear}}{% endcapture %}
             {% endif %}
