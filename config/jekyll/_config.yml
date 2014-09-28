@@ -2,7 +2,7 @@ markdown: rdiscount
 permalink: pretty
 destination: ../../app/views/blog
 baseurl: /blog
-paginate: 1
+paginate: 3
 exclude:
   - Rakefile
   - Gemfile
