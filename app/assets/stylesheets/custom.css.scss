@@ -31,29 +31,37 @@ textarea {
 .content {
   margin-left: 0px !important;
   a:hover {
-    text-decoration:none;
+    text-decoration: none;
   }
 }
+
 a.post-title {
-    font-weight: 800 ;
-    color:#333;
-    font-size:30px;
+  font-weight: 800;
+  color: #333;
+  font-size: 30px;
 }
+
 .author {
   margin-left: 0px;
 }
-.date{
-  font-size:18px; font-color:#7a7a7a; 
-  font-style: italic; font-weight: 300;
+
+.date {
+  font-size: 18px;
+  font-color: #7a7a7a;
+  font-style: italic;
+  font-weight: 300;
   margin-bottom: 1em;
 }
+
 .post-title {
   margin-bottom: 1.414em;
 }
+
 .content h3 {
-  color:#FFFFFF;
+  color: #FFFFFF;
   border-bottom: 1px solid;
 }
+
 .center {
   text-align: center;
   h1 {
@@ -125,6 +133,7 @@ p {
 .topmargin {
   margin-top: 1.5em;
 }
+
 .navbar .nav > li > a {
   padding: 0 15px 10px;
 }
@@ -141,10 +150,12 @@ ul.nav a:link, a:visited {
     text-decoration: none;
   }
 }
-.activeNav{
+
+.activeNav {
   border-bottom: 3px solid black;
   color: #000000 !important;
 }
+
 .hero-unit {
   margin-top: 5em;
 }
@@ -197,40 +208,45 @@ ul.nav a:link, a:visited {
   position: absolute;
   color: #44484A;
   text-align: left;
-  font-size:30px;
+  font-size: 30px;
 }
+
 .words:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
+
 #front-words {
-  padding-top:.5em;
-  font-size:4em;
+  padding-top: .5em;
+  font-size: 4em;
   padding-left: 2%;
   margin-left: 2%;
-  color:#FFFFFF;
+  color: #FFFFFF;
   opacity: 0.85;
   filter: alpha(opacity=85); /* For IE8 and earlier */
   font-weight: bold;
 }
+
 #front-words_bottom {
-  padding-top:.5em;
-  font-size:1em;
-  margin-left:50%;
-  color:#FFFFFF;
+  padding-top: .5em;
+  font-size: 1em;
+  margin-left: 50%;
+  color: #FFFFFF;
   font-weight: bold;
   border-bottom: 8px solid white;
 }
+
 #place {
-  font-size:3.5em;
-  margin-left:12.2em;
-  margin-top:-1.4em;
+  font-size: 3.5em;
+  margin-left: 12.2em;
+  margin-top: -1.4em;
   font-weight: medium;
 }
+
 /* map div */
 #map-canvas {
   width: 100%;
   height: 600px;
-  margin-bottom:8em;
+  margin-bottom: 8em;
 }
 
 //to fix squished zoom bar, google map image distortion
@@ -256,23 +272,38 @@ label {
 /* padding bottom of map, more spacious */
 
 .status {
-  height:17em;
-  margin-bottom:20px;
+  height: 17em;
+  margin-bottom: 20px;
   background-image: image-url("jenngabe.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center; 
+  background-position: center;
   background-size: 65%
 }
+
 .hover_name {
-  margin-left:20px;
+  margin-left: 20px;
 }
+
 .pagination {
   margin-bottom: 0px !important;
-  margin-top:2em;
+  margin-top: 2em;
 }
+
 .navbar-fixed-bottom {
   position: fixed;
-    bottom: 0;
-    right: 0;
+  bottom: 0;
+  right: 0;
 }
+
+.archive-feed a, .archive-feed-footer a, .next a, .previous a {
+  color: #333333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.pager {
+  margin-top: 5em;
+  padding-bottom: 3.125em
+}
+
