@@ -3,15 +3,23 @@ layout: default
 title: Blog Archive
 ---
 
-<h1>Blog</h1>
-<ul>
-    <li><span>Archive</span></li>
-    <li><a href="/blog">Feed</a></li>
-</ul>
+<div class="row-fluid">
+    <div class="span9">
+        {% for post in site.posts %}
+        {% capture currentyear %}{{post.date | date: "%B %Y"}}{% endcapture %}
+        {% if currentyear != year %}
+        {% unless forloop.first %}</ul>{% endunless %}
+        <h1>{{ currentyear }}</h1>
+        <ul>
+            {% capture year %}{{currentyear}}{% endcapture %}
+            {% endif %}
+            <li><span class="date">{{ post.date | date_to_string }} </span> : <a
+                    href="{{ post.url | prepend: site.baseurl | replace: '//', '/'}}">{{ post.title }}</a></li>
+            {% endfor %}
 
-<ul class="posts">
-    {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="/blog{{ post.url }}">{{ post.title }}</a>
-    </li>
-    {% endfor %}
-</ul>
+    </div>
+    <ul class="archive-feed span2" style="list-style-type: none; padding-left:2em; border-left: 1px solid #333;">
+        <li><a href="/blog/archive">Archive</a></li>
+        <li><a href="/blog">Feed</a></li>
+    </ul>
+</div>
