@@ -33,11 +33,11 @@ title: Blog Index
                 {% if paginator.previous_page %}
                 <li class="previous"><a
                         href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr;
-                    Older</a></li>
+                    Newer</a></li>
                 {% endif %}
                 {% if paginator.next_page %}
                 <li class="next"><a
-                        href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Newer &rarr;</a>
+                        href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older &rarr;</a>
                 </li>
                 {% endif %}
             </ul>
