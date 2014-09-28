@@ -10,7 +10,9 @@ function initialize_photogrid() {
         photoSorting: 'standard',
         //maxItemsPerLine: 4,
         paginationMaxLinesPerPage: 5,
+        colorSchemeViewer: 'dark',
         thumbnailLabel: { display: true, position: 'onBottom', titleMaxLength: 20, align: 'center'},
+        viewerToolbar: { autoMinimize: 2000 },
         theme: 'light',
         touchAnimation: false
     });
