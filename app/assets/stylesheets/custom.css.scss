@@ -123,22 +123,6 @@ p {
   }
 }
 
-#logo_text {
-  float: left;
-  font-size: 1.3em;
-  color: #0099FF;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  font-weight: bold;
-  width: 10em;
-  height: auto;
-  line-height: 1;
-  &:hover {
-    color: blue;
-    text-decoration: none;
-  }
-}
-
 /* nav bad */
 .topmargin {
   margin-top: 1.5em;
@@ -163,6 +147,9 @@ ul.nav a:link, a:visited {
 
 .activeNav {
   border-bottom: 3px solid black;
+}
+
+.activeNav a {
   color: #000000 !important;
 }
 
@@ -216,13 +203,14 @@ ul.nav a:link, a:visited {
   font-family: 'Pacifico', cursive;
   display: inline-block;
   position: absolute;
-  color: #44484A;
+  color: #333333;
   text-align: left;
   font-size: 30px;
 }
 
 .words:hover {
   text-decoration: none;
+  color: #333333;
 }
 
 #front-words {
@@ -312,8 +300,14 @@ label {
   font-weight: bold;
 }
 
+.archive-post a {
+  color: #333333;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
 .pager {
   margin-top: 5em;
   padding-bottom: 3.125em
 }
-
