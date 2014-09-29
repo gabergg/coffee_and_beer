@@ -11,7 +11,6 @@ $(window).load(function() {
 
 $(window).scroll(function () {
     var currentScroll = $(this).scrollTop();
-    console.log(headerOrgOffset);
     if (currentScroll <= headerOrgOffset) {
         $('#header-wrap').show();
     }
