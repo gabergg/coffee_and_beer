@@ -1,5 +1,6 @@
 var infowindow;
 var markerInfoWindow;
+var currentMarkerInfoWindow;
 var map;
 var allMarkers = [];
 window.globalMarkers = [];
@@ -30,6 +31,20 @@ function initialize_map() {
         icon: "<%= image_path('car_icon.png') %>",
         zIndex: 10000,
         optimized: false
+    });
+
+    currentMarkerInfoWindow = new google.maps.InfoWindow({
+    });
+
+    google.maps.event.addListener(markerCurrent, 'mouseover', function () {
+        currentMarkerInfoWindow.setContent("<div class='hover_name'><strong>" + this.name + "</strong></div>");
+        currentMarkerInfoWindow.open(map, this);
+        $(".gm-style-iw").next("div").hide();
+    });
+
+    google.maps.event.addListener(markerCurrent, 'mouseout', function () {
+        currentMarkerInfoWindow.close();
+        $(".gm-style-iw").next("div").show();
     });
 
     var html = "<div id='infowindow-content'>" +
