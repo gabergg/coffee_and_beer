@@ -1,6 +1,5 @@
 class StaticPagesController < ApplicationController
   def home
-    gon.gmaps_api_key = ENV["GMAPS_API_KEY"]
     @markers = Meeting.all.select("name, latitude, longitude")
     @markers = @markers.to_a.map(&:serializable_hash)
 
