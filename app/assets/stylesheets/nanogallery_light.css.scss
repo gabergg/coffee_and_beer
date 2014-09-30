@@ -426,6 +426,8 @@
 
 .nanogallery_theme_light .nanoGalleryContainerParent .nanoGalleryPagination {
   /*color:#000;*/
+  font-family: 'Cabin', Helvetica, Arial, sans-serif;
+  font-weight: 600;
   margin: 10px auto 5px auto;
   padding: 4px;
   text-align: center;
@@ -447,7 +449,7 @@
 }
 
 .nanogallery_theme_light .nanoGalleryContainerParent .nanoGalleryPagination .currentPage {
-  text-decoration: underline;
+  font-weight:100;
 }
 
 .nanogallery_theme_light .nanoGalleryContainerParent .nanoGalleryPagination .paginationPrev {
