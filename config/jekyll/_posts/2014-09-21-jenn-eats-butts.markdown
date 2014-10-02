@@ -2,6 +2,7 @@
 layout: post
 published: true
 title: Bubba 222 ;)
+author: gabe
 ---
 
 Ey bro,
