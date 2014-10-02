@@ -40,6 +40,7 @@ function initialize_map() {
         currentMarkerInfoWindow.setContent("<div class='hover_name'><strong>" + this.name + "</strong></div>");
         $(".gm-style-iw").next("div").hide();
         currentMarkerInfoWindow.open(map, this);
+        $(".gm-style-iw").next("div").hide();
     });
 
     google.maps.event.addListener(markerCurrent, 'mouseout', function () {
