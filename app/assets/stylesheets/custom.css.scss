@@ -38,9 +38,9 @@ textarea {
 }
 
 .post-title {
+  vertical-align: middle;
   color: #333;
   font-size: 30px;
-  margin-bottom: 1.414em;
   font-family: 'Vollkorn', Georgia, Times, serif;
 }
 
@@ -337,7 +337,13 @@ label {
   margin-top: 5em;
   padding-bottom: 3.125em
 }
-
+#authorname {
+  font-family: 'Cabin', Helvetica, Arial, sans-serif;
+  margin-bottom: 1.414em;
+}
+#gravatar {
+  float:right; margin-right:1em;
+}
 /*
 .gmno-print {
   z-index: 10000;

@@ -2,10 +2,13 @@
 layout: default
 ---
 
+<!-- Look the author details up from the site config. -->
+{% assign author = site.data.authors[page.author] %}
+
+
 <div id="post">
     <div class="row-fluid">
         <div class="span9">
-
             {% assign minutes = content | number_of_words | divided_by: 180 %}
             {% if minutes == 0 %}
             {% assign minutes = 1 %}
@@ -14,10 +17,16 @@ layout: default
                 <span class="date">{{ page.date | date: '%B %d, %Y' }}</span>
                 <span class="date" style="float:right; margin-right:1em;">{{ minutes }} minute read</span>
             </p>
-
-            <h3 class="span12 content post-title"><span class="post-title">{{ page.title }}</span>
-            </h3>
-            <br>
+            <div class="span12" style="margin-left: 0px; "> 
+                <img id="gravatar" src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=100" >
+                <h3 class="content post-title"><span class="post-title">{{ page.title }}</span>
+                </h3>
+                <!-- Output author details if some exist. -->
+                {% if author %}
+                    <span id="authorname">by {{ author.name }}</span>
+                {% endif %}
+                <br>
+            </div>
 
             <div class="span11 content" style="margin-bottom: 3em; ">
                 {{ content }}
@@ -25,12 +34,12 @@ layout: default
             </div>
 
             <ul class="archive-feed-footer content span4" style="list-style-type: none">
-                <li><a href="/blog/archive">Back to archive</a></li>
-                <li><a href="/blog">Back to feed</a></li>
+                <li><a href="/blog/archive"><i class="icon-share-alt"></i> Back to archive</a></li>
+                <li><a href="/blog"><i class="icon-share-alt"></i> Back to feed</a></li>
             </ul>
 
         </div>
-        <ul class="archive-feed span2" style="list-style-type: none; padding-left:2em; border-left: 1px solid #333;">
+        <ul class="archive-feed span2 well" style="list-style-type: none; padding-left:2em; padding-bottom:2em;">
             <li><a href="/blog/archive">Archive</a></li>
             <li><a href="/blog">Feed</a></li>
         </ul>
