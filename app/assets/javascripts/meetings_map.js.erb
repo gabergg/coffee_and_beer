@@ -38,8 +38,8 @@ function initialize_map() {
 
     google.maps.event.addListener(markerCurrent, 'mouseover', function () {
         currentMarkerInfoWindow.setContent("<div class='hover_name'><strong>" + this.name + "</strong></div>");
-        currentMarkerInfoWindow.open(map, this);
         $(".gm-style-iw").next("div").hide();
+        currentMarkerInfoWindow.open(map, this);
     });
 
     google.maps.event.addListener(markerCurrent, 'mouseout', function () {
