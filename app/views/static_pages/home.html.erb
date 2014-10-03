@@ -1,14 +1,24 @@
 <div class="row-fluid">
+  <h1>Welcome to Coffee n' Beer</h1>
+</div>
+
+<div class="row-fluid">
   <!--<div id="home_content">
     <div class="status">
       <div id="front-words">We're currently in:
         <br><br><br><br><br><br><br><span id="front-words_bottom">Ann Arbor, MI</span></div>
     </div>
   </div>-->
-  <p>Click anywhere on the map or enter an address or location, and we'd love to come meet you!</p>
-  <input id="pac-input" class="controls" style="width:500px; margin-top: 10px; height: 20px;" type="text" placeholder="Address or location">
+  <div class="home-image-container">
+    <img class="home-image img-responsive" src="<%= image_path('jenngabe.jpg') %>"/>
 
-  <div id="map-canvas"></div>
-  <script>loadScript()</script>
+    <p class="home-image-location">We're currently in Ann Arbor, MI</p>
+  </div>
 </div>
+
+<p>Click anywhere on the map or enter an address or location, and we'd love to come meet you!</p>
+<input id="pac-input" class="controls" style="width:500px; margin-top: 10px; height: 20px;" type="text" placeholder="Address or location">
+
+<div id="map-canvas"></div>
+<script>loadScript()</script>
 
