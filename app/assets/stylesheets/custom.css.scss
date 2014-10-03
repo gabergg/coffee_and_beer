@@ -268,9 +268,9 @@ ul.nav a:link, a:visited {
   width: 100%;
   height: 600px;
   margin-bottom: 7em;
-  border: 2px solid;
-  border-radius: 25px;
-  border-color: #333333;
+  //border: 2px solid;
+  border-radius: 15px;
+  //border-color: #333333;*/
   /*box-shadow: 1px 1px 2px #777777;
   -webkit-box-shadow: 1px 1px 2px #777777;
   -moz-box-shadow: 1px 1px 2px #777777;*/
@@ -412,12 +412,14 @@ a.symbol {
   margin-top: 20px;
 }
 
+.archive-post {
+  line-height: 1.5;
+}
+
 .archive-post span {
-  font-family: 'Cabin', Helvetica, Arial, sans-serif;
+  font-family: 'Vollkorn', Georgia, Times, serif;
   font-size: 1.2em;
-  font-weight: 300;
-  line-height: 1.7em;
-  //letter-spacing:1px;
+  font-weight: 500;
 }
 
 .about-image {
@@ -430,9 +432,9 @@ a.symbol {
   width: 100%;
   height: 250px;
   overflow: hidden;
-  border: 2px solid;
-  border-radius: 25px;
-  border-color: #333333;
+  //border: 2px solid;
+  border-radius: 15px;
+  //border-color: #333333;
   margin-bottom: 50px;
 }
 
@@ -447,3 +449,8 @@ a.symbol {
   margin: 20px;
   color: #ffffff;
 }
+
+.post-month h2 {
+  margin-top: -1px;
+}
+

@@ -9,11 +9,11 @@ title: Blog Archive
         {% capture currentyear %}{{post.date | date: "%B %Y"}}{% endcapture %}
         {% if currentyear != year %}
         {% unless forloop.first %}</ul>{% endunless %}
-        <h2>{{ currentyear }}</h2>
+        <div class="post-month"><h2>{{ currentyear }}</h2></div>
         <ul class="content month-of-posts" style="list-style-type: none">
             {% capture year %}{{currentyear}}{% endcapture %}
             {% endif %}
-            <li class="archive-post"><span class="date">{{ post.date | date: '%b %-d' }} </span> : <a
+            <li class="archive-post"><span class="archive-date">{{ post.date | date: '%b %-d' }} </span> : <a
                     href="{{ post.url | prepend: site.baseurl | replace: '//', '/'}}">{{ post.title }}</a></li>
             {% endfor %}
 
