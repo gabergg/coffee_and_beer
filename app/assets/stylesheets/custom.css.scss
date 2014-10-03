@@ -436,12 +436,14 @@ a.symbol {
   margin-bottom: 50px;
 }
 
-.home-image {
-  margin-top: -75px;
+.home-image-currently {
+  float: left;
+  margin: 20px;
+  color: #ffffff;
 }
 
 .home-image-location {
-  left:0;
-  top:0;
-  z-index:100;
+  float: right;
+  margin: 20px;
+  color: #ffffff;
 }
