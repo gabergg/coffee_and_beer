@@ -408,12 +408,17 @@ a.symbol {
   float: left;
   margin: 20px;
   color: #ffffff;
+  opacity: 0.75;
+  filter: alpha(opacity=75); /* For IE8 and earlier */
 }
 
 .home-image-location {
   float: right;
   margin: 20px;
   color: #ffffff;
+  opacity: 0.75;
+  filter: alpha(opacity=75); /* For IE8 and earlier */
+  border-bottom: 5px solid;
 }
 
 .post-month h2 {
