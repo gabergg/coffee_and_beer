@@ -392,7 +392,7 @@ a.symbol {
 
 .about-image {
   margin-bottom: 20px;
-  height:30%;
+  height: 30%;
   width: 30%;
 }
 
@@ -418,13 +418,17 @@ a.symbol {
   color: #ffffff;
   opacity: 0.95;
   filter: alpha(opacity=95); /* For IE8 and earlier */
-  //border-bottom: 5px solid;
 }
 
 .post-month h2 {
   margin-top: -1px;
 }
-blockquote  {
-  margin: 1em 0;
-  border-left: 1px dashed #999;
+
+.hang-touch {
+  margin-top: 20px;
+}
+
+.about-section {
+  //outline: 5px solid #CCC;
+  //border-left: solid 5px #777777;
 }
