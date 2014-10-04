@@ -400,8 +400,14 @@ a.symbol {
   width: 100%;
   height: 250px;
   border-radius: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   background-image: image-url('jenngabe.jpg');
+}
+
+.home-image-container h1 {
+  color: #ffffff;
+  opacity: 0.95;
+  filter: alpha(opacity=95); /* For IE8 and earlier */
 }
 
 .home-image-currently {
@@ -410,6 +416,7 @@ a.symbol {
   color: #ffffff;
   opacity: 0.95;
   filter: alpha(opacity=95); /* For IE8 and earlier */
+  margin-top: 125px;
 }
 
 .home-image-location {
@@ -418,6 +425,7 @@ a.symbol {
   color: #ffffff;
   opacity: 0.95;
   filter: alpha(opacity=95); /* For IE8 and earlier */
+  margin-top: 125px;
 }
 
 .post-month h2 {
