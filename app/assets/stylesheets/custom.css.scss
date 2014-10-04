@@ -30,6 +30,7 @@ body {
   overflow: hidden !important;
   padding-top: 60px;
   color: #333333;
+  font-family: 'Cabin', Helvetica, Arial, sans-serif;
 }
 
 section {
@@ -436,7 +437,6 @@ a.symbol {
   margin-top: 20px;
 }
 
-.about-section {
-  //outline: 5px solid #CCC;
-  //border-left: solid 5px #777777;
+.section-line {
+  margin: 75px 0px;
 }
