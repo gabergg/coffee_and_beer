@@ -5,7 +5,7 @@ var map;
 var allMarkers = [];
 window.globalMarkers = [];
 //var oms;
-var currentLocation = { 'city': 'Ann Arbor', 'state': 'MI', 'lat': 42.2808, 'long': -83.7430 };
+var currentLocation = { 'city': 'Pittsburgh', 'state': 'PA', 'lat': 40.435624799999985, 'long': -79.99588640000002 };
 
 function initialize_map() {
     var update_timeout = null;
@@ -23,7 +23,7 @@ function initialize_map() {
     map = new google.maps.Map(document.getElementById("map-canvas"), options);
 
     /* position: {lat: markerSet[i].latitude, lng: markerSet[i].longitude} */
-    var latlngCurrent = new google.maps.LatLng(42.2808, -83.7430);
+    var latlngCurrent = new google.maps.LatLng(currentLocation.lat, currentLocation.long);
     var markerCurrent = new google.maps.Marker({
         map: map,
         position: latlngCurrent,
@@ -108,6 +108,7 @@ function initialize_map() {
 
             allMarkers.push(marker);
             infowindow.open(map, marker);
+            $(".gm-style-iw").next("div").show();
 
 
             bounds.extend(place.geometry.location);
