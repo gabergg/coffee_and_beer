@@ -19,15 +19,18 @@ class StaticPagesController < ApplicationController
   end
 
   def set_markers
-    @markers = Meeting.all.select("name, latitude, longitude")
+    @markers = Meeting.all.select("name, latitude_shift, longitude_shift")
     @markers = @markers.to_a.map(&:serializable_hash)
+
+    p "Hey buddy"
+    p @markers
 
     gon.markers = @markers.map { |marker|
       @name_list = marker["name"].split(',')
       @name_list = @name_list.map { |name|
         name.split(' ').first
       }
-      {name: @name_list.join(', '), latitude: marker["latitude"].to_f, longitude: marker["longitude"].to_f}
+      {name: @name_list.join(', '), latitude: marker["latitude_shift"].to_f, longitude: marker["longitude_shift"].to_f }
     }
   end
 
