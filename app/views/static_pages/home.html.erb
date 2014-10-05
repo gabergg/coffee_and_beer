@@ -12,9 +12,11 @@
 
   <div class="row-fluid">
     <div class="span8 offset2">
-      <p style="font-size:20px;"><strong>Coffee n' Beer is our experiment and 6 month adventure.</strong><br><br>We left our jobs in the Silicon Valley,
+      <p style="font-size:20px;"><strong>Coffee n' Beer is our experiment and 6 month adventure.</strong><br><br>We left
+        our jobs in the Silicon Valley,
         and we're now traveling the United States and Canada. Our aim is to experience as much as possible that
-        we couldn't experience in the constraints of working life. We're meeting people, and we're writing software. We'd love to
+        we couldn't experience in the constraints of working life. We're meeting people, and we're writing software.
+        We'd love to
         get together.</p>
     </div>
     <!--<div class="span6 text-center" style="margin-top:100px">
@@ -24,7 +26,7 @@
 
 </section>
 
-<div class="arrow"></div>
+<div id="map-button" class="arrow"></div>
 <!--<hr class="section-line">!-->
 
 
@@ -40,3 +42,11 @@
       favorite spot.</p>
   </div>
 </section>
+
+<script>
+    $("#map-button").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#map").offset().top
+        }, 250);
+    });
+</script>
