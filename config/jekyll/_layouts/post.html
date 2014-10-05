@@ -17,13 +17,16 @@ layout: default
                 <span class="date">{{ page.date | date: '%B %d, %Y' }}</span>
                 <span class="date" style="float:right; margin-right:1em;">{{ minutes }} minute read</span>
             </p>
-            <div class="span12" style="margin-left: 0px; "> 
-                <img class="img-circle img-responsive" id="gravatar" src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=100" >
+
+            <div class="span12" style="margin-left: 0px; ">
+                <img class="img-circle img-responsive" id="gravatar"
+                     src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=100">
+
                 <h3 class="content post-title"><span class="post-title">{{ page.title }}</span>
                 </h3>
                 <!-- Output author details if some exist. -->
                 {% if author %}
-                    <span id="authorname">by {{ author.name }}</span>
+                <span id="authorname">by {{ author.name }}</span>
                 {% endif %}
                 <br>
             </div>
@@ -39,9 +42,11 @@ layout: default
             </ul>
 
         </div>
-        <ul class="archive-feed span2" style="list-style-type: none; padding-left:2em; padding-bottom:2em;">
-            <li style="margin-bottom:.25em;"><a href="/blog/archive"><i class="icon-inbox"></i> Archive</a></li>
-            <li><a href="/blog"><i class="icon-align-justify"></i> Feed</a></li>
+        <ul class="archive-feed span2"
+            style="list-style-type: none; padding-left:2em; padding-bottom:2em; border-left: 1px solid #ABABAB;">
+            <li style="margin-bottom:.25em;"><a href="/blog/archive"><i class="icon-inbox"></i>&nbsp;&nbsp;&nbsp;&nbsp;Archive</a>
+            </li>
+            <li><a href="/blog"><i class="icon-align-justify"></i>&nbsp;&nbsp;&nbsp;&nbsp;Feed</a></li>
         </ul>
 
     </div>
