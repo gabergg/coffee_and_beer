@@ -397,36 +397,10 @@ a.symbol {
   width: 30%;
 }
 
-.home-image-container {
-  width: 100%;
-  height: 250px;
+.home-image {
   border-radius: 15px;
   margin-bottom: 50px;
-  background-image: image-url('jenngabe.jpg');
-}
-
-.home-image-container h1 {
-  color: #ffffff;
-  opacity: 0.95;
-  filter: alpha(opacity=95); /* For IE8 and earlier */
-}
-
-.home-image-currently {
-  float: left;
-  margin: 20px;
-  color: #ffffff;
-  opacity: 0.95;
-  filter: alpha(opacity=95); /* For IE8 and earlier */
-  margin-top: 125px;
-}
-
-.home-image-location {
-  float: right;
-  margin: 20px;
-  color: #ffffff;
-  opacity: 0.95;
-  filter: alpha(opacity=95); /* For IE8 and earlier */
-  margin-top: 125px;
+  margin-top:10px;
 }
 
 .post-month h2 {
