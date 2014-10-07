@@ -4,74 +4,12 @@
  <title>BLOG_NAME</title>
  <link href="YOUR_URL/atom.xml" rel="self"/>
  <link href="YOUR_URL"/>
- <updated>2014-10-05T17:57:38-04:00</updated>
+ <updated>2014-10-07T17:26:11-04:00</updated>
  <id>BLOG_URL</id>
  <author>
    <name>BLOG_NAME</name>
  </author>
 
- 
- <entry>
-   <title>Bubba 22222 ;)</title>
-   <link href="YOUR_URL/2014/09/24/jenn-walks-butts/"/>
-   <updated>2014-09-24T00:00:00-04:00</updated>
-   <id>BLOG_URL/2014/09/24/jenn-walks-butts</id>
-   <content type="html">&lt;p&gt;Ey bro,&lt;/p&gt;
-
-&lt;p&gt;This is a sick blog platform integrated into the ish, but no posties yet.&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Bubba 222 ;)</title>
-   <link href="YOUR_URL/2014/09/21/jenn-eats-butts/"/>
-   <updated>2014-09-21T00:00:00-04:00</updated>
-   <id>BLOG_URL/2014/09/21/jenn-eats-butts</id>
-   <content type="html">&lt;p&gt;Ey bro,&lt;/p&gt;
-
-&lt;p&gt;This is a sick blog platform integrated into the ish, but no posties yet.&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Bubba ;)</title>
-   <link href="YOUR_URL/2014/09/20/jenn-eats/"/>
-   <updated>2014-09-20T00:00:00-04:00</updated>
-   <id>BLOG_URL/2014/09/20/jenn-eats</id>
-   <content type="html">&lt;p&gt;Ey bro, can&#39;t wait to hang.&lt;/p&gt;
-
-&lt;p&gt;This is a sick blog platform integrated into the ish, but no posties yet.&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Hey there Adamface ;)</title>
-   <link href="YOUR_URL/2014/08/24/jenn-rocks/"/>
-   <updated>2014-08-24T00:00:00-04:00</updated>
-   <id>BLOG_URL/2014/08/24/jenn-rocks</id>
-   <content type="html">&lt;p&gt;Ey bro, can&#39;t wait to hang.&lt;/p&gt;
-
-&lt;p&gt;This is a sick blog platform integrated into the ish, but no posties yet.&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Eating Peanuts</title>
-   <link href="YOUR_URL/2014/08/24/eating-peanuts/"/>
-   <updated>2014-08-24T00:00:00-04:00</updated>
-   <id>BLOG_URL/2014/08/24/eating-peanuts</id>
-   <content type="html">&lt;p&gt;I love peanuts. I love to eat peanuts.&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Eat eat peanut butter</title>
-   <link href="YOUR_URL/2014/08/24/eating-peanut-butter/"/>
-   <updated>2014-08-24T00:00:00-04:00</updated>
-   <id>BLOG_URL/2014/08/24/eating-peanut-butter</id>
-   <content type="html">&lt;p&gt;I love eating peanut butter..&lt;/p&gt;
-</content>
- </entry>
  
  
 </feed>
