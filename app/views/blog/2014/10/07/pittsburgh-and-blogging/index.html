@@ -1,38 +1,46 @@
----
-layout: default
----
-
 <!-- Look the author details up from the site config. -->
-{% assign author = site.data.authors[page.author] %}
+
 
 
 <div id="post">
     <div class="row-fluid">
         <div class="span9">
-            {% assign minutes = content | number_of_words | divided_by: 180 %}
-            {% if minutes == 0 %}
-            {% assign minutes = 1 %}
-            {% endif %}
+            
+            
+            
+            
             <p class="span12 author" style="margin-left: 0px;">
-                <span class="date">{{ page.date | date: '%B %d, %Y' }}</span>
-                <span class="date" style="float:right; margin-right:1em;">{{ minutes }} minute read</span>
+                <span class="date">October 07, 2014</span>
+                <span class="date" style="float:right; margin-right:1em;">1 minute read</span>
             </p>
 
             <div class="span12" style="margin-left: 0px; ">
                 <img class="img-circle img-responsive" id="gravatar"
-                     src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=100">
+                     src="http://www.gravatar.com/avatar/82df1e4e3a7950810af96ea2f8347942?s=100">
 
-                <h3 class="content post-title"><span class="post-title">{{ page.title }}</span>
+                <h3 class="content post-title"><span class="post-title">Pittsburgh and Blogging</span>
                 </h3>
                 <!-- Output author details if some exist. -->
-                {% if author %}
-                <span id="authorname">by {{ author.name }}</span>
-                {% endif %}
+                
+                <span id="authorname">by Gabe Grazier G'Sell</span>
+                
                 <br>
             </div>
 
             <div class="span11 content" style="margin-bottom: 3em; margin-top: 2em; ">
-                {{ content }}
+                <p>Writing is tough. As time goes on, it seems like eloquence is harder and harder to come by.
+I'm hoping that a public-facing blog will motivate me not only to write regularly, but also to consciously improve my writing.
+For now, the only goal I'm setting for myself is to contribute to this blog at least once a week.</p>
+
+<p>I plan to write about software, traveling, food, and whatever else comes to mind.
+It's worth noting that Jenn will be writing as well, and there's no guarantee of coordination between our posts and/or topics.</p>
+
+<p>Here goes!</p>
+
+<hr />
+
+<p><img src="/assets/gabe_face.jpg" title="A wrench in the plan" alt="The car" /></p>
+
                 <hr>
             </div>
 
