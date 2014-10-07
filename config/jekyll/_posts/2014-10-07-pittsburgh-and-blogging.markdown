@@ -1,6 +1,6 @@
 ---
 layout: post
-published: true
+published: false
 title: Pittsburgh and Blogging
 author: gabe
 ---

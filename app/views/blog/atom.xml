@@ -4,32 +4,12 @@
  <title>BLOG_NAME</title>
  <link href="YOUR_URL/atom.xml" rel="self"/>
  <link href="YOUR_URL"/>
- <updated>2014-10-07T19:12:23-04:00</updated>
+ <updated>2014-10-07T19:32:23-04:00</updated>
  <id>BLOG_URL</id>
  <author>
    <name>BLOG_NAME</name>
  </author>
 
- 
- <entry>
-   <title>Pittsburgh and Blogging</title>
-   <link href="YOUR_URL/2014/10/07/pittsburgh-and-blogging/"/>
-   <updated>2014-10-07T00:00:00-04:00</updated>
-   <id>BLOG_URL/2014/10/07/pittsburgh-and-blogging</id>
-   <content type="html">&lt;p&gt;Writing is tough. As time goes on, it seems like eloquence is harder and harder to come by.
-I&#39;m hoping that a public-facing blog will motivate me not only to write regularly, but also to consciously improve my writing.
-For now, the only goal I&#39;m setting for myself is to contribute to this blog at least once a week.&lt;/p&gt;
-
-&lt;p&gt;I plan to write about software, traveling, food, and whatever else comes to mind.
-It&#39;s worth noting that Jenn will be writing as well, and there&#39;s no guarantee of coordination between our posts and/or topics.&lt;/p&gt;
-
-&lt;p&gt;Here goes!&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/gabe_face.jpg&quot; title=&quot;A wrench in the plan&quot; alt=&quot;The car&quot; /&gt;&lt;/p&gt;
-</content>
- </entry>
  
  
 </feed>
