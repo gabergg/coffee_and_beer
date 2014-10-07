@@ -761,6 +761,7 @@
 }
 
 .nanogallery_theme_light .nanoGalleryViewer .toolbar .label {
+  display: none;
   padding: 3px 20px 3px 10px;
   min-width: 10px;
   border-left: 0px solid #000;
@@ -777,6 +778,7 @@
 }
 
 .nanogallery_theme_light .nanoGalleryViewer .toolbar .label .title {
+  display: none;
   font-size: 1em;
   margin: auto;
   vertical-align: middle;
