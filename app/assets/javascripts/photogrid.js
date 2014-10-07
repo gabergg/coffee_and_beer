@@ -1,17 +1,14 @@
 function initialize_photogrid() {
     $("#photogrid").nanoGallery({
-        //thumbnailWidth: 'auto',
         thumbnailGutterWidth: 10,
         thumbnailGutterHeight: 10,
         userID: '99000315@N06',
-        //userID: '126685552@N06',
-        photoset: 'none',
+        photoset: '72157648494522432',
         kind: 'flickr',
         photoSorting: 'standard',
-        //maxItemsPerLine: 4,
         paginationMaxLinesPerPage: 5,
         colorSchemeViewer: 'dark',
-        thumbnailLabel: { display: true, position: 'onBottom', titleMaxLength: 20, align: 'center'},
+        thumbnailLabel: { display: true, displayDescription: true, position: 'overImageonBottom', hideIcons: true, titleMaxLength: 20, align: 'center'},
         viewerToolbar: { autoMinimize: 2000 },
         theme: 'light',
         touchAnimation: false
