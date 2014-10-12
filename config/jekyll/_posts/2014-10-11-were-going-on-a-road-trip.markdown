@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: We're going on a road trip!
 author: jenn
 ---
