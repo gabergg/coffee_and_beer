@@ -1,7 +1,7 @@
 ---
 layout: post
-published: false
-title: Pittsburgh and Blogging
+published: true
+title: Quitting and Blogging
 author: gabe
 ---
 
@@ -16,5 +16,15 @@ Here goes!
 
 ---
 
-![The car](/assets/gabe_face.jpg "A wrench in the plan")
+It's hard to know at this point whether I made the right decision in leaving Yahoo. I can't imagine a better place
+to start my career as a software developer, and I'm so grateful for all that I learned in my 14 months in Sunnyvale.
+I worked with some of the smartest people I've ever met, and I learned more about software and computer science than
+ I had through 4 years of coursework.
 
+Working on Yahoo Mail meant that my focus at work was entirely on the back-end of one product. This meant that the
+primary focus of my life was the back-end of Yahoo Mail. Those 14 months were likely the most productive months of
+my life. However, I also put my personal projects and passions on the back burner. I've come to
+
+ * Developing a product driven by passion
+ * Taking a product from 0 to 1
+ * Learning design and business aspects of a product
