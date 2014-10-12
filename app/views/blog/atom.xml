@@ -4,7 +4,7 @@
  <title>BLOG_NAME</title>
  <link href="YOUR_URL/atom.xml" rel="self"/>
  <link href="YOUR_URL"/>
- <updated>2014-10-11T23:45:07-04:00</updated>
+ <updated>2014-10-11T23:48:59-04:00</updated>
  <id>BLOG_URL</id>
  <author>
    <name>BLOG_NAME</name>
@@ -12,10 +12,27 @@
 
  
  <entry>
+   <title>We're going on a road trip!</title>
+   <link href="YOUR_URL/2014/10/11/were-going-on-a-road-trip/"/>
+   <updated>2014-10-11T00:00:00-04:00</updated>
+   <id>BLOG_URL/2014/10/11/were-going-on-a-road-trip</id>
+   <content type="html">&lt;p&gt;&lt;strong&gt;The road trip begins!&lt;/strong&gt; Gabe and I quit our jobs. We terminated our lease and I sold my car. Essentially, we were homeless, and I&#39;ve never been so excited! We&#39;re going on a road trip across the United States and part of Canada! Before this road trip, my idea of “roughing it” was sleeping on the floor at a friends place. But since we no longer have jobs, we decided to camp at different state parks, stay at friend&#39;s places, and couchsurf to save money. Gabe had never camped before, and I had only done festival camping for 2 nights in which other people set up the tent for me. So, it&#39;ll be quite the experience sleeping outside in the cold!&lt;/p&gt;
+
+&lt;p&gt;Our first night of camping was at Pine Grove Furnace State Park. The mid-point of the Appalachian Trail actually runs through the park! We got there at around 9pm, so it was really dark setting up the tent. There were a few mistakes, but we&#39;ll do better next time =P. We ended up setting up the tent on a slight slope and we forgot to clear the small rocks and nuts from the ground before we set up the tent. I sleep on my side, so I kept rolling into Gabe in the middle of the night. It ended up being fine, but a bit of a rough night&#39;s sleep. Pretty good for the first night of camping in my opinion!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://farm3.staticflickr.com/2948/15315030287_fa952ba56a_h.jpg&quot; title=&quot;First Night Camping&quot; alt=&quot;First Night Camping&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Our journey so far:&lt;/p&gt;
+
+&lt;p&gt;Saline, Michigan &gt; Pittsburgh, PA &gt; Pine Grove Furnace State Park &gt; Hershey, PA &gt; Philadelphia, PA &gt; New York City&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>Quitting and Blogging</title>
-   <link href="YOUR_URL/2014/10/07/pittsburgh-and-blogging/"/>
+   <link href="YOUR_URL/2014/10/07/quitting-and-blogging/"/>
    <updated>2014-10-07T00:00:00-04:00</updated>
-   <id>BLOG_URL/2014/10/07/pittsburgh-and-blogging</id>
+   <id>BLOG_URL/2014/10/07/quitting-and-blogging</id>
    <content type="html">&lt;p&gt;Writing is tough. As time goes on, it seems like eloquence is harder and harder to come by.
 I&#39;m hoping that a public-facing blog will motivate me not only to write regularly, but also to consciously improve my writing.
 For now, the only goal I&#39;m setting for myself is to contribute to this blog at least once a week.&lt;/p&gt;
