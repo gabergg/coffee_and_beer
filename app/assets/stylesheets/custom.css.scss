@@ -428,3 +428,16 @@ a.symbol {
 img.home-image:hover, img.home-image:active {
   cursor: default;
 }
+
+tr.space-under > td
+{
+  padding-bottom: 1em;
+}
+
+.gm-style {
+  font-family: 'Cabin', Helvetica, Arial, sans-serif;
+}
+
+input, button, select, textarea {
+  font-family: 'Cabin', Helvetica, Arial, sans-serif;
+}

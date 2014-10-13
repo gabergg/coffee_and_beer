@@ -48,17 +48,18 @@ function initialize_map() {
     });
 
     var html = "<div id='infowindow-content'>" +
-        "<table>" +
-        "<tr><td>Name:</td> <td><input type='text' id='name'/> </td> </tr>" +
-        "<tr><td>Email:</td> <td><input type='text' id='email'/> </td> </tr>" +
-        "<tr><td>Phone: </td><td><input type='text' id='phone'/></td></tr>" +
-        "<tr><td>Activity:</td> <td><select id='meeting_type'>" +
-        "<option value='coffee' SELECTED>Coffee</option>" +
-        "<option value='beer'>Beer</option>" +
-        "<option value='other'>Other</option>" +
-        "</select> </td></tr>" +
-        "<tr><td></td><td><input type='button' value='Join Us!' onclick='saveData()'/></td></tr></table>" +
-        "</div>";
+            "<table>" +
+            "<tr><td>Name:</td> <td><input type='text' id='name'/> </td> </tr>" +
+            "<tr><td>Email:</td> <td><input type='text' id='email'/> </td> </tr>" +
+            "<tr><td>Phone: </td><td><input type='text' id='phone'/></td></tr>" +
+            "<tr><td>Activity:</td> <td><select id='meeting_type'>" +
+            "<option value='coffee' SELECTED>Coffee</option>" +
+            "<option value='beer'>Beer</option>" +
+            "<option value='other'>Other</option>" +
+            "</select> </td></tr>" +
+            "<tr class='space-under' ><td colspan='2'>We don't need email <i>and</i> phone - one is fine.</td></tr></table>" +
+            "<tr><td></td><td><input type='button' value='Join Us!' onclick='saveData()'/></td></tr>" +
+            "</div>";
 
     infowindow = new google.maps.InfoWindow({
         content: html
@@ -71,11 +72,11 @@ function initialize_map() {
 
     // Create the search box and link it to the UI element.
     var input = /** @type {HTMLInputElement} */(
-        document.getElementById('pac-input'));
+            document.getElementById('pac-input'));
     map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
 
     var searchBox = new google.maps.places.SearchBox(
-        /** @type {HTMLInputElement} */(input));
+            /** @type {HTMLInputElement} */(input));
 
     // [START region_getplaces]
     // Listen for the event fired when the user selects an item from the
@@ -151,19 +152,11 @@ function initialize_map() {
 
 }
 
-//function loadScript() {
+function loadScript() {
 
-    //$.getScript("http://maps.google.com/maps/api/js?libraries=places&sensor=false&callback=initialize_map");
+    $.getScript("http://maps.google.com/maps/api/js?libraries=places&sensor=false&callback=initialize_map");
 
-    /*
-     var mapScript = document.createElement('script');
-     var src = "http://maps.google.com/maps/api/js?libraries=places&sensor=false&callback=initialize_map";
-     mapScript.type = 'text/javascript';
-     mapScript.src = src;
-     document.body.appendChild(mapScript);
-     */
-
-//}
+}
 
 function saveData() {
 
