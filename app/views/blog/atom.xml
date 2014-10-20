@@ -4,12 +4,38 @@
  <title>BLOG_NAME</title>
  <link href="YOUR_URL/atom.xml" rel="self"/>
  <link href="YOUR_URL"/>
- <updated>2014-10-13T02:36:38-04:00</updated>
+ <updated>2014-10-19T21:47:17-04:00</updated>
  <id>BLOG_URL</id>
  <author>
    <name>BLOG_NAME</name>
  </author>
 
+ 
+ <entry>
+   <title>YC Application Submitted!</title>
+   <link href="YOUR_URL/2014/10/15/yc-application/"/>
+   <updated>2014-10-15T00:00:00-04:00</updated>
+   <id>BLOG_URL/2014/10/15/yc-application</id>
+   <content type="html">&lt;p&gt;On Tuesday night we submitted our application for YC!&lt;/p&gt;
+
+&lt;p&gt;For those of you that don&#39;t know, YCombinator is one of the most prestigious startup accelerators in the US. It&#39;s a
+venture capital firm that provides support and community to its founders. We&#39;re applying with an idea for a language
+learning product that we&#39;re calling Linguistik.&lt;/p&gt;
+
+&lt;p&gt;The most important piece of language learning is finding an opportunity to converse with native speakers. We think
+there&#39;s a lot of room for improvement in the current tools to find a language partner. There&#39;s not a great way to find
+a partner with similar interests, values, and skills. This is particularly frustrating because great matchmaking tools
+ exist already - they&#39;re just applied to dating or social networking products. Linguistik is a social matchmaking product
+ to automatically match its users with compatible partners who can provide productive and engaging language practice.&lt;/p&gt;
+
+&lt;p&gt;For now the team is just Jenn and I. She&#39;ll lead design and product, and I&#39;ll lead development. Version 1 will be a
+webapp written with Rails. I&#39;ll have a launch page and eventually a prototype up online at getlinguistik.com.&lt;/p&gt;
+
+&lt;p&gt;It would be wonderful to get into YC, but we know it&#39;s impossible to count on that. Either way, it was great to
+experience the application process, and we&#39;re excited to build out the product. We&#39;ll give more updates as progress
+continues!&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>We're going on a road trip!</title>
