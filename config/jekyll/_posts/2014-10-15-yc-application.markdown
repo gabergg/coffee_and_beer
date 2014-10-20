@@ -2,6 +2,7 @@
 layout: post
 published: true
 title: YC Application Submitted!
+author: gabe
 ---
 
 On Tuesday night we submitted our application for YC!
