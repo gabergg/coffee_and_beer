@@ -5,6 +5,8 @@ CoffeeAndBeer::Application.routes.draw do
   match '/contact',    to: 'static_pages#contact', via: 'get'
   match '/meetings',   to: 'meetings#create', via: 'post'
   match '/photos',     to: 'static_pages#photos', via: 'get'
+  
+  post '/move' => 'static_pages#move'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -78,4 +78,8 @@ CoffeeAndBeer::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+  
+  #current location
+  config.current_lat = 42.166707
+  config.current_long = -83.781608
 end

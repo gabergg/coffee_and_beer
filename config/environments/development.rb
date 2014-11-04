@@ -26,4 +26,8 @@ CoffeeAndBeer::Application.configure do
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
   config.assets.debug = true
+
+  #current location
+  config.current_lat = 42.166707
+  config.current_long = -83.781608
 end
