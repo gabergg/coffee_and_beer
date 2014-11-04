@@ -22,8 +22,11 @@ class StaticPagesController < ApplicationController
   end
   
   def move
-    Rails.application.config.current_lat = params[:lat]
-    Rails.application.config.current_long = params[:long]
+    unless params[:auth] != ENV['MOVE_AUTH']
+      Rails.application.config.current_lat = params[:lat]
+      Rails.application.config.current_long = params[:long]
+    end
+    
     render :nothing => true
   end
 
