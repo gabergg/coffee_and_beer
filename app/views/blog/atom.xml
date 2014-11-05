@@ -4,12 +4,25 @@
  <title>BLOG_NAME</title>
  <link href="YOUR_URL/atom.xml" rel="self"/>
  <link href="YOUR_URL"/>
- <updated>2014-10-19T21:57:50-04:00</updated>
+ <updated>2014-11-05T02:59:32-05:00</updated>
  <id>BLOG_URL</id>
  <author>
    <name>BLOG_NAME</name>
  </author>
 
+ 
+ <entry>
+   <title>An Answer to a Common Question</title>
+   <link href="YOUR_URL/2014/11/05/reasons/"/>
+   <updated>2014-11-05T00:00:00-05:00</updated>
+   <id>BLOG_URL/2014/11/05/reasons</id>
+   <content type="html">&lt;p&gt;When we tell people that we quit our jobs to go on a road trip for 6 months, the most common question is: “So...was there something that sparked this trip?” I think it&#39;s really interesting so many people have asked us this.&lt;/p&gt;
+
+&lt;p&gt;So, I&#39;m going to try to answer this. I wouldn&#39;t say there was a specific moment that sparked this. Rather, Gabe and I didn&#39;t really see ourselves at our jobs long term, and there really isn&#39;t ever a perfect time for something like this. We didn&#39;t have a family nor were we tied town to anything permanent. I knew if we didn&#39;t do it, it would always be a lingering “what if?”&lt;/p&gt;
+
+&lt;p&gt;I find that my life perspective changes every time I travel. Suddenly, the little things don&#39;t matter as much. You reconnect with hobbies you used to love and find out new things about yourself you didn&#39;t know before. I could spend X years at a company, hoping those 2 weeks of vacation come faster. ...Or I could go on a road trip. I&#39;m not saying everyone should quit their jobs, but I do think that there is something to be said about the occasional trip. It&#39;s almost like a proverbial reset button. With that being said, it&#39;s been really nice thinking about what makes me happy and what I want to do going forward.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>YC Application Submitted!</title>
