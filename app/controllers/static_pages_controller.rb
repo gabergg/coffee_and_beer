@@ -20,14 +20,22 @@ class StaticPagesController < ApplicationController
   def contact
     set_markers
   end
-  
+
   def move
-    unless params[:auth] != ENV['MOVE_AUTH']
-      Rails.application.config.current_lat = params[:lat]
-      Rails.application.config.current_long = params[:long]
+    if params[:auth] != ENV['MOVE_AUTH']
+      render :nothing => true, :status => :unauthorized
+      return
     end
-    
-    render :nothing => true
+
+    if !check_lat_long(params[:lat], params[:long])
+      render :nothing => true, :status => :bad_request
+      return
+    end
+
+    Rails.application.config.current_lat = params[:lat]
+    Rails.application.config.current_long = params[:long]
+
+    render :nothing => true, :status => :ok
   end
 
   def set_markers
@@ -43,6 +51,19 @@ class StaticPagesController < ApplicationController
     }
 
     gon.currentLocation = { lat: Rails.application.config.current_lat, long: Rails.application.config.current_long }
+  end
+  
+  def check_lat_long(lat, long)
+
+    unless lat.is_a?(Numeric) && long.is_a?(Numeric)
+      return false
+    end
+    
+    unless lat.between?(-90,90) && long.between?(-180,180)
+      return false
+    end
+    return true
+
   end
 
 end
