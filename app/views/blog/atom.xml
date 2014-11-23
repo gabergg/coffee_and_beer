@@ -4,12 +4,36 @@
  <title>BLOG_NAME</title>
  <link href="YOUR_URL/atom.xml" rel="self"/>
  <link href="YOUR_URL"/>
- <updated>2014-11-12T11:57:41-06:00</updated>
+ <updated>2014-11-23T17:45:57-06:00</updated>
  <id>BLOG_URL</id>
  <author>
    <name>BLOG_NAME</name>
  </author>
 
+ 
+ <entry>
+   <title>A much needed Respite in Minneapolis</title>
+   <link href="YOUR_URL/2014/11/23/a-much-needed-respite/"/>
+   <updated>2014-11-23T00:00:00-06:00</updated>
+   <id>BLOG_URL/2014/11/23/a-much-needed-respite</id>
+   <content type="html">&lt;p&gt;We just came off a wonderful two-day stint in Minneapolis, MN. We were pretty exhausted heading into Minnesota, and the weather had
+taken a turn for the worst. Thankfully, we were able to rest up at the beautiful house of Anne and David F., right on Lake Riley.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/anne_and_david.jpg&quot; title=&quot;With our lovely hosts&quot; alt=&quot;With our lovely hosts&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;One morning we woke up to a pileated woodpecker in the backyard and a bald eagle fishing on the lake. We learned about ice
+boating, maple syrup, and Swarm. We&#39;re incredibly thankful to Anne and David for their generosity and hospitality.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Who knew Minnesota had a coffee scene? We weren&#39;t able to try all of the coffee roasters in town, but we checked out Dogwood,
+Bull Run, and Five Watt. We were most impressed with Five Watt, followed by Dogwood. Bull Run has a nice vibe - it seems
+like a place to study while sipping a sweetened latte - but the coffee didn&#39;t live up to the others.&lt;/p&gt;
+
+&lt;p&gt;Minneapolis had some good Chinese and Vietnamese food too! We really enjoyed the city, and if their tech scene is as good as
+their food scene, we might have to check out their job listings...&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Our Hike Through the White Mountains</title>
