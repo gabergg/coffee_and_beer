@@ -4,12 +4,23 @@
  <title>BLOG_NAME</title>
  <link href="YOUR_URL/atom.xml" rel="self"/>
  <link href="YOUR_URL"/>
- <updated>2014-11-23T17:45:57-06:00</updated>
+ <updated>2014-11-23T17:54:19-06:00</updated>
  <id>BLOG_URL</id>
  <author>
    <name>BLOG_NAME</name>
  </author>
 
+ 
+ <entry>
+   <title>Beers Checked In</title>
+   <link href="YOUR_URL/2014/11/23/untappd/"/>
+   <updated>2014-11-23T00:00:00-06:00</updated>
+   <id>BLOG_URL/2014/11/23/untappd</id>
+   <content type="html">&lt;p&gt;Current Untappd Stats:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/untappd_jenn.png&quot; title=&quot;Jenn&#39;s Untappd Stats&quot; alt=&quot;Jenn&#39;s Untappd Stats&quot; /&gt; &lt;img src=&quot;/assets/untappd_gabe.png&quot; title=&quot;Gabe&#39;s Untappd Stats&quot; alt=&quot;Gabe&#39;s Untappd Stats&quot; /&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>A much needed Respite in Minneapolis</title>

@@ -1,12 +1,11 @@
 ---
 layout: post
 published: true
-title: untappd
+title: Beers Checked In
 author: jenn
 ---
 
 Current Untappd Stats:
 
-![Jenn's Untappd Stats](/assets/untappd_jenn.png "Jenn's Untappd Stats")
+![Jenn's Untappd Stats](/assets/untappd_jenn.png "Jenn's Untappd Stats") ![Gabe's Untappd Stats](/assets/untappd_gabe.png "Gabe's Untappd Stats")
 
-![Gabe's Untappd Stats](/assets/untappd_gabe.png "Gabe's Untappd Stats")
