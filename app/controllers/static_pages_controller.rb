@@ -54,12 +54,11 @@ class StaticPagesController < ApplicationController
   end
   
   def check_lat_long(lat, long)
-
-    unless lat.is_a?(Numeric) && long.is_a?(Numeric)
-      return false
-    end
     
-    unless lat.between?(-90,90) && long.between?(-180,180)
+    Float(lat) rescue return false
+    Float(long) rescue return false
+
+    unless lat.to_f.between?(-90,90) && long.to_f.between?(-180,180)
       return false
     end
     return true
