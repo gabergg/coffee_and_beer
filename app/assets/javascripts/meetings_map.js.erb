@@ -5,7 +5,6 @@ var map;
 var allMarkers = [];
 window.globalMarkers = [];
 //var oms;
-//var currentLocation = { 'city': 'Boyne City', 'state': 'MI', 'lat': 45.216675, 'long': -85.013942 };
 
 function initialize_map() {
     var update_timeout = null;
@@ -51,13 +50,13 @@ function initialize_map() {
             "<table>" +
             "<tr><td>Name:</td> <td><input type='text' id='name'/> </td> </tr>" +
             "<tr><td>Email:</td> <td><input type='text' id='email'/> </td> </tr>" +
-            "<tr><td>Phone: </td><td><input type='text' id='phone'/></td></tr>" +
+            //"<tr><td>Phone: </td><td><input type='text' id='phone'/></td></tr>" +
             "<tr><td>Activity:</td> <td><select id='meeting_type'>" +
             "<option value='coffee' SELECTED>Coffee</option>" +
             "<option value='beer'>Beer</option>" +
             "<option value='other'>Other</option>" +
             "</select> </td></tr>" +
-            "<tr class='space-under' ><td colspan='2'>We don't need email <i>and</i> phone - one is fine.</td></tr></table>" +
+            //"<tr class='space-under' ><td colspan='2'>We don't need email <i>and</i> phone - one is fine.</td></tr></table>" +
             "<tr><td></td><td><input type='button' value='Join Us!' onclick='saveData()'/></td></tr>" +
             "</div>";
 
@@ -160,17 +159,17 @@ function loadScript() {
 
 function saveData() {
 
-    if (!validateForm({email: $('#email'), phone: $('#phone')}))
+    if (!validateForm({email: $('#email')/*, phone: $('#phone')*/}))
         return;
 
     var email = $('#email').val();
     var name = $('#name').val();
-    var phone = $('#phone').val();
+    //var phone = $('#phone').val();
     var meeting_type = $('#meeting_type').val();
     var lastMarker = allMarkers.pop();
     var latitude = lastMarker.getPosition().lat().toString();
     var longitude = lastMarker.getPosition().lng().toString();
-    var dataSet = {"email": email, "name": name, "phone": phone, "meeting_type": meeting_type,
+    var dataSet = {"email": email, "name": name, /*"phone": phone, */"meeting_type": meeting_type,
         "latitude": latitude, "longitude": longitude};
     infowindow.close();
 

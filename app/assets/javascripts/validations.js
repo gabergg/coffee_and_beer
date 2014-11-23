@@ -1,27 +1,28 @@
 var hasEmail;
-var hasPhone;
+//var hasPhone;
 var validEmail;
-var validPhone;
+//var validPhone;
 
 function validateForm() {
     $('div').remove('.alert');
 
     hasEmail = true;
-    hasPhone = true;
+    //hasPhone = true;
     validEmail = false;
-    validPhone = false;
+    //validPhone = false;
     var reasons = [];
 
     reasons.push(validateEmail($('#email')));
-    reasons.push(validatePhone($('#phone')));
+    //reasons.push(validatePhone($('#phone')));
 
-    if (!(hasEmail || hasPhone)) {
+    if (!(hasEmail/* || hasPhone*/)) {
         $('#email').addClass('invalid-input');
-        $('#phone').addClass('invalid-input');
-        reasons.push("We need either your phone or your email!");
+        //$('#phone').addClass('invalid-input');
+        //reasons.push("We need either your phone or your email!");
+        reasons.push("We need your email to get in touch!");
     }
 
-    if (reasons != "" && !(validEmail || validPhone)) {
+    if (reasons != "" && !(validEmail/* || validPhone*/)) {
         html_error = "<div class='alert alert-error'>" +
             "<a href='#' class='close' data-dismiss='alert'>&times;</a>" +
             "<strong>Whoops!</strong> Your form looks great! Except..." +
@@ -77,7 +78,7 @@ function validateEmail(fld) {
     }
     return error;
 }
-
+/*
 function validatePhone(fld) {
     var value = fld[0].value
     var error = "";
@@ -97,4 +98,4 @@ function validatePhone(fld) {
         fld.removeClass('invalid-input');
     }
     return error;
-}
+}*/

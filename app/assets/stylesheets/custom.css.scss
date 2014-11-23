@@ -256,7 +256,9 @@ ul.nav a:link, a:visited {
 
 //push name down from top of info window so it doesnt get covered by address input
 #infowindow-content {
-  margin-top: 20px;
+  margin-top: 25px;
+  padding-bottom: 5px;
+  overflow: hidden;
 }
 
 //input labels lined up with input in map form
