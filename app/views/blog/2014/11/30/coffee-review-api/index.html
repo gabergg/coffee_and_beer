@@ -1,0 +1,97 @@
+<!-- Look the author details up from the site config. -->
+
+
+
+<div id="post">
+    <div class="row-fluid">
+        <div class="span9">
+            
+            
+            <p class="span12 author" style="margin-left: 0px;">
+                <span class="date">November 30, 2014</span>
+                <!--<span class="date" style="float:right; margin-right:1em;">1 minute read</span>-->
+            </p>
+
+            <div class="span12" style="margin-left: 0px; ">
+                <img class="img-circle img-responsive" id="gravatar"
+                     src="http://www.gravatar.com/avatar/82df1e4e3a7950810af96ea2f8347942?s=100">
+
+                <h3 class="content post-title"><span class="post-title">Coffee Review API</span>
+                </h3>
+                <!-- Output author details if some exist. -->
+                
+                <span id="authorname">by Gabe Grazier G'Sell</span>
+                
+                <br>
+            </div>
+
+            <div class="span11 content" style="margin-bottom: 3em; margin-top: 25px; ">
+                <p>As we've traveled the country drinking coffee and meeting members of the coffee community, we've discovered the
+tool and resource that is CoffeeReview.com. Roasters take pride in their Coffee Review ratings (JBC, Thirty-Thirty, etc),
+and Coffee Review provides a solid starting point for coffee drinkers to explore a region's coffee scene. The roaster /
+bean list is far from comprehensive, but I've found the site very useful these last few months. However, there have
+been times that I've been frustrated that I can't quickly find exactly what I want within that goldmine of data. So I've
+ written a pretty basic API for Coffee Review.</p>
+
+<p>Feel free to check out my code and documentation on <a href="http://github.com/gabergg/cr-api">Github</a>. A sample
+http request might look like this:</p>
+
+<pre><code>curl 'http://coffeeapi.herokuapp.com/v2/reviews?rating=95&amp;location=cali&amp;order=rating&amp;count=15'
+</code></pre>
+
+<p>This would result in a json response that looks like this:</p>
+
+<pre><code>```javascript
+{
+  reviews: 
+    {
+    "name":"Panama Ironman Camilina Geisha",
+    "roaster":"Klatch Coffee",
+    "roast":"Medium-Light",
+    "origin":"Boquete growing region, western Panama.",
+    "location":"Los Angeles, California",
+    "review_date":"September 2014",
+    "overall_rating":97,
+    "aroma":10,
+    "acidity":9,
+    "body":9,
+    "flavor":10,
+    "aftertaste":9,
+    "description":"Beautifully structured and almost impossibly intricate in flavor and aroma. The fruit sensation is so deep and so complex that one could find almost any note in it: we settled on guava, mango and tangerine. Intensely floral – passion fruit, lilac, lily – with crisp cacao nib and sandalwood complication. Rich, lyric acidity; syrupy but buoyant mouthfeel. The aromatic fireworks quiet a bit but still saturate the finish.",
+    "price":"$49.95/8 ounces",
+    "agtron":"58/80",
+    "with_milk":null
+    }, ...
+}
+```
+</code></pre>
+
+<p>You can check out more details in the docs on my Github, linked above. For now, it's a very simple API, but I've already
+found it quite useful. I'd love to hear any comments, questions, or issues with it - it's a work in progress.</p>
+
+<p>I hope to integrate Coffee Review with another coffee-related piece of software that I'm working on at the moment. I'll
+write about that in the hopefully not-too-distant future.</p>
+
+                <br/>
+
+                <p style="font-size: 14px">Let us know if you're interested in chatting about software, traveling, or
+                    anything else! Feel free to reach out to us via the information on our <a href="/contact">contact
+                        page!</a></p>
+                <hr>
+            </div>
+
+            <ul class="archive-feed-footer content span4" style="list-style-type: none">
+                <li><a href="/blog/archive"><i class="icon-arrow-left"></i><span>   Back to archive</span></a></li>
+                <li><a href="/blog"><i class="icon-arrow-left"></i><span>   Back to feed</span></a></li>
+            </ul>
+
+        </div>
+        <ul class="archive-feed span2"
+            style="list-style-type: none; padding-left:2em; padding-bottom:2em; border-left: 1px solid #ABABAB;">
+            <li style="margin-bottom:.25em;"><a href="/blog/archive"><i class="icon-inbox"></i>&nbsp;&nbsp;&nbsp;&nbsp;Archive</a>
+            </li>
+            <li><a href="/blog"><i class="icon-align-justify"></i>&nbsp;&nbsp;&nbsp;&nbsp;Feed</a></li>
+        </ul>
+
+    </div>
+</div>
