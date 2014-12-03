@@ -24,13 +24,13 @@ I had through 4 years of coursework.
 Working on Yahoo Mail meant that my focus at work was entirely on the back-end of one product. This meant that the
 primary focus of my life was the back-end of Yahoo Mail. Those 14 months were likely the most productive months of
 my life. However, I also put my personal projects and passions on the back burner. I left Yahoo to travel and work
-full-speed on a project relating to my love of language. I hope to gain experience that is harder to gain at a large
+full-speed on a couple of projects. I hope to gain experience that was hard for me to gain at a large
 tech company:  
 
  * Developing a product driven by passion
- * Taking a product from 0 to 1
+ * Creating a product from scratch
  * Learning non-software aspects of a product, e.g. design and finance  
      
 Jenn and I will be applying to Y Combinator next week. We know how competitive YC is. The experience of applying will
 be valuable in itself and will act to motivate us in the development of a prototype. I look forward to building a
-product from scratch with a partner as wonderful and capable as Jenn.
+product from nothing with a partner as wonderful and capable as Jenn.

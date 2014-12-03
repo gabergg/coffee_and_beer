@@ -18,8 +18,7 @@ a partner with similar interests, values, and skills. This is particularly frust
  to automatically match its users with compatible partners who can provide productive and engaging language practice.
 
 For now the team is just Jenn and I. She'll lead design and product, and I'll lead development. Version 1 will be a 
-webapp written with Rails. I'll have a launch page and eventually a prototype up online at getlinguistik.com.
+webapp written with Rails.
 
 It would be wonderful to get into YC, but we know it's impossible to count on that. Either way, it was great to 
-experience the application process, and we're excited to build out the product. We'll give more updates as progress 
-continues!
+experience the application process, and we're excited to build something that we really care about!

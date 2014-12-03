@@ -4,12 +4,28 @@
  <title>BLOG_NAME</title>
  <link href="YOUR_URL/atom.xml" rel="self"/>
  <link href="YOUR_URL"/>
- <updated>2014-11-30T04:39:23-05:00</updated>
+ <updated>2014-12-02T22:46:30-05:00</updated>
  <id>BLOG_URL</id>
  <author>
    <name>BLOG_NAME</name>
  </author>
 
+ 
+ <entry>
+   <title>Third Leg Plan</title>
+   <link href="YOUR_URL/2014/12/02/third-leg-route/"/>
+   <updated>2014-12-02T00:00:00-05:00</updated>
+   <id>BLOG_URL/2014/12/02/third-leg-route</id>
+   <content type="html">&lt;p&gt;We&#39;re creating a tentative plan for the next leg of the journey. This would encompass probably ~20 days of driving.&lt;/p&gt;
+
+&lt;p&gt;The current plan:&lt;/p&gt;
+
+&lt;iframe src=&quot;https://www.google.com/maps/embed?pb=!1m65!1m12!1m3!1d5866898.824627634!2d-118.45815762536691!3d44.11025009085117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m50!1i0!3e0!4m5!1s0x876b80aa231f17cf%3A0x118ef4f8278a36d6!2sDenver%2C+CO!3m2!1d39.7384357!2d-104.9848593!4m5!1s0x5343510fedc7db4d%3A0x214c1d71e3fdf714!2sHelena%2C+Mt!3m2!1d46.595805!2d-112.027031!4m5!1s0x87523d9488d131ed%3A0x5b53b7a0484d31ca!2sSalt+Lake+City%2C+UT!3m2!1d40.760779299999996!2d-111.89104739999999!4m5!1s0x54aef172e947b49d%3A0x9a5b989b36679d9b!2sBoise%2C+ID!3m2!1d43.618710199999995!2d-116.2146068!4m5!1s0x549e185c30bbe7e5%3A0xddfcc9d60b84d9b1!2sSpokane%2C+WA!3m2!1d47.658780199999995!2d-117.42604659999999!4m5!1s0x548673f143a94fb3%3A0xbb9196ea9b81f38b!2sVancouver%2C+BC%2C+Canada!3m2!1d49.2827291!2d-123.12073749999999!4m5!1s0x54c6170840e5e339%3A0x902bf2e1452fe3a3!2sCrater+Lake+National+Park%2C+Oregon!3m2!1d42.868441!2d-122.168478!4m5!1s0x808fcae48af93ff5%3A0xb99d8c0aca9f717b!2sSan+Jose%2C+CA!3m2!1d37.3393857!2d-121.8949555!5e0!3m2!1sen!2sus!4v1417576413699&quot; width=&quot;720&quot; height=&quot;540&quot; frameborder=&quot;0&quot; style=&quot;border:0&quot;&gt;&lt;/iframe&gt;
+
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Coffee Review API</title>
@@ -144,11 +160,10 @@ a partner with similar interests, values, and skills. This is particularly frust
  to automatically match its users with compatible partners who can provide productive and engaging language practice.&lt;/p&gt;
 
 &lt;p&gt;For now the team is just Jenn and I. She&#39;ll lead design and product, and I&#39;ll lead development. Version 1 will be a
-webapp written with Rails. I&#39;ll have a launch page and eventually a prototype up online at getlinguistik.com.&lt;/p&gt;
+webapp written with Rails.&lt;/p&gt;
 
 &lt;p&gt;It would be wonderful to get into YC, but we know it&#39;s impossible to count on that. Either way, it was great to
-experience the application process, and we&#39;re excited to build out the product. We&#39;ll give more updates as progress
-continues!&lt;/p&gt;
+experience the application process, and we&#39;re excited to build something that we really care about!&lt;/p&gt;
 </content>
  </entry>
  
@@ -195,19 +210,19 @@ I had through 4 years of coursework.&lt;/p&gt;
 &lt;p&gt;Working on Yahoo Mail meant that my focus at work was entirely on the back-end of one product. This meant that the
 primary focus of my life was the back-end of Yahoo Mail. Those 14 months were likely the most productive months of
 my life. However, I also put my personal projects and passions on the back burner. I left Yahoo to travel and work
-full-speed on a project relating to my love of language. I hope to gain experience that is harder to gain at a large
+full-speed on a couple of projects. I hope to gain experience that was hard for me to gain at a large
 tech company:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Developing a product driven by passion&lt;/li&gt;
-&lt;li&gt;Taking a product from 0 to 1&lt;/li&gt;
+&lt;li&gt;Creating a product from scratch&lt;/li&gt;
 &lt;li&gt;Learning non-software aspects of a product, e.g. design and finance&lt;/li&gt;
 &lt;/ul&gt;
 
 
 &lt;p&gt;Jenn and I will be applying to Y Combinator next week. We know how competitive YC is. The experience of applying will
 be valuable in itself and will act to motivate us in the development of a prototype. I look forward to building a
-product from scratch with a partner as wonderful and capable as Jenn.&lt;/p&gt;
+product from nothing with a partner as wonderful and capable as Jenn.&lt;/p&gt;
 </content>
  </entry>
  
