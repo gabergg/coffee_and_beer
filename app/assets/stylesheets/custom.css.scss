@@ -443,3 +443,8 @@ tr.space-under > td
 input, button, select, textarea {
   font-family: 'Cabin', Helvetica, Arial, sans-serif;
 }
+
+.gmap_embed > .gm-style > .directions-card{
+  display: none !important;
+  
+}
